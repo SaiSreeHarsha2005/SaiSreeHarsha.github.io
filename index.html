@@ -52,7 +52,6 @@
     </script>
 
     <style type="text/css">
-        /* Custom scrollbar matching paper aesthetic */
         ::-webkit-scrollbar {
             width: 6px;
             height: 6px;
@@ -147,12 +146,22 @@
                 <div class="flex items-center gap-4">
                     <span class="flex items-center gap-1.5">
                         <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
-                        Status: Available for Roles
+                        Status: Available for Opportunities
                     </span>
                     <span class="hidden md:inline text-charcoal-900/40 dark:text-cream-100/40">|</span>
                     <span class="hidden md:inline">VOL. 2026</span>
                 </div>
                 <div class="flex items-center gap-6">
+                    <!-- Direct Compose Gmail Connection -->
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=qasaisreeharsha2005@gmail.com" target="_blank" rel="noopener noreferrer" class="hover:text-gold-500 transition-colors flex items-center gap-1">
+                        <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                        <span>Connect Me</span>
+                    </a>
+                    <!-- Direct Link to Resume PDF -->
+                    <a href="M_SaiSreeHarsha_Resume.pdf" target="_blank" rel="noopener noreferrer" class="hover:text-gold-500 transition-colors flex items-center gap-1">
+                        <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+                        <span>Resume PDF</span>
+                    </a>
                     <button id="print-btn" class="hover:text-gold-500 transition-colors flex items-center gap-1" title="Print Archive">
                         <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 6 2 18 2 18 9"></polyline><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path><rect x="6" y="14" width="12" height="8"></rect></svg>
                         <span class="hidden sm:inline">Print Archive</span>
@@ -215,14 +224,15 @@
             <!-- Left Editorial Column: Hero Summary & Quick Nav -->
             <div class="lg:col-span-5 lg:border-r lg:border-charcoal-900/10 dark:lg:border-cream-100/10 lg:pr-8 flex flex-col justify-between">
                 <div class="space-y-6">
-                    <div class="flex items-start gap-6">
+                    <div class="flex flex-col sm:flex-row items-start gap-6">
                         <!-- Contributor Photograph (Clean visual board with automatic initials fallback) -->
-                        <div class="contributor-photo shrink-0 bg-white dark:bg-cream-50 p-2 pb-2 shadow-lg border border-charcoal-900/10 rotate-[-3deg]">
-                            <img src="image.jpeg" alt="Minnekanti Sai Sree Harsha" class="w-28 h-28 md:w-36 md:h-36 object-cover grayscale-[20%]" onerror="this.onerror=null; this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'160\' height=\'160\'%3E%3Crect width=\'160\' height=\'160\' fill=\'%23232323\'/%3E%3Ctext x=\'50%25\' y=\'54%25\' font-family=\'DM Serif Display, serif\' font-size=\'58\' fill=\'%23C5A880\' text-anchor=\'middle\' dominant-baseline=\'middle\'%3EMS%3C/text%3E%3C/svg%3E';">
+                        <div class="contributor-photo shrink-0 bg-white dark:bg-cream-50 p-2 pb-2 shadow-lg border border-charcoal-900/10 rotate-[-3deg] mx-auto sm:mx-0">
+                            <img src="photo.jpg" alt="Minnekanti Sai Sree Harsha" class="w-28 h-28 md:w-36 md:h-36 object-cover grayscale-[20%]" onerror="this.onerror=null; this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'160\' height=\'160\'%3E%3Crect width=\'160\' height=\'160\' fill=\'%23232323\'/%3E%3Ctext x=\'50%25\' y=\'54%25\' font-family=\'DM Serif Display, serif\' font-size=\'58\' fill=\'%23C5A880\' text-anchor=\'middle\' dominant-baseline=\'middle\'%3EMS%3C/text%3E%3C/svg%3E';">
                         </div>
-                        <div class="space-y-3 pt-1">
+                        <div class="space-y-3 pt-1 text-center sm:text-left">
                             <span class="text-xs font-mono tracking-wider text-gold-500 uppercase block font-semibold">I. FRONT PAGE EDITORIAL</span>
-                            <h2 class="font-serif text-3xl md:text-5xl leading-tight">
+                            <!-- FIX: Line height changed to leading-[1.18] for premium, non-overlapping spacing -->
+                            <h2 class="font-serif text-3xl md:text-4xl lg:text-5xl leading-[1.18] tracking-tight">
                                 Engineering automated pipelines and robust embedded AI platforms with meticulous precision.
                             </h2>
                         </div>
@@ -234,393 +244,646 @@
                         "I bridge complex backends with robust intelligent interfaces. Whether designing real-time meteorological pipelines processing millions of datapoints or hardware-integrated tablet interfaces, I engineer for scale and bulletproof execution."
                     </blockquote>
                     
-                    <p class="text-sm leading-relaxed text-charcoal-900/70 dark:text-cream-100/70 text-justify">
+                    <p class="text-sm leading-relaxed text-charcoal-900/70 dark:text-cream-100/70 text-justify font-sans">
                         Currently in my final year of B.Tech in Computer Science and Engineering at Geethanjali College of Engineering and Technology (2023-2027), Hyderabad. With practical engineering tenures at the India Meteorological Department and Nucleonix Systems, I construct resilient systems using Java, Python, and scalable backend/API logic. I'm an enthusiastic, always-learning engineer at heart — currently deep in Agentic AI systems and working towards the AWS Certified AI Practitioner credential.
                     </p>
+
+                    <!-- Contact/Action Deck (Inspired directly by image_2ab265.png and resume integrations) -->
+                    <div class="pt-4 flex flex-col sm:flex-row gap-4">
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=qasaisreeharsha2005@gmail.com" target="_blank" rel="noopener noreferrer" class="flex-1 flex items-center justify-center gap-2 border-2 border-charcoal-900 dark:border-cream-100 py-3 rounded-xl font-mono text-sm uppercase tracking-wider font-semibold hover:bg-gold-500 hover:text-cream-50 hover:border-gold-500 transition-all shadow-md">
+                            <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 22,6"></polyline></svg>
+                            <span>Contact Me</span>
+                        </a>
+                        <a href="M_SaiSreeHarsha_Resume.pdf" target="_blank" rel="noopener noreferrer" class="flex-1 flex items-center justify-center gap-2 border border-charcoal-900/20 dark:border-cream-100/20 bg-cream-50 dark:bg-charcoal-800 py-3 rounded-xl font-mono text-sm uppercase tracking-wider font-semibold hover:border-gold-500 hover:text-gold-500 transition-all">
+                            <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line></svg>
+                            <span>View Resume</span>
+                        </a>
+                    </div>
                 </div>
 
                 <!-- Handcrafted Interactive Table of Contents -->
-            <div class="mt-12 pt-8 border-t border-dashed border-charcoal-900/20 dark:border-cream-100/20 no-print">
-                <span class="text-[10px] font-mono uppercase tracking-[0.2em] block mb-4 text-charcoal-900/50 dark:text-cream-100/50">ARCHIVE CONTENTS</span>
-                <nav class="space-y-2 font-serif text-lg">
-                    <a href="#experience" class="flex justify-between items-center group py-1 border-b border-transparent hover:border-gold-500 transition-all">
-                        <span>01 / The Tenure Log</span>
-                        <span class="text-xs font-mono text-gold-500 group-hover:translate-x-2 transition-transform">&rarr;</span>
-                    </a>
-                    <a href="#projects" class="flex justify-between items-center group py-1 border-b border-transparent hover:border-gold-500 transition-all">
-                        <span>02 / Blueprints & Systems</span>
-                        <span class="text-xs font-mono text-gold-500 group-hover:translate-x-2 transition-transform">&rarr;</span>
-                    </a>
-                    <a href="#skills" class="flex justify-between items-center group py-1 border-b border-transparent hover:border-gold-500 transition-all">
-                        <span>03 / Technical Taxonomy</span>
-                        <span class="text-xs font-mono text-gold-500 group-hover:translate-x-2 transition-transform">&rarr;</span>
-                    </a>
-                    <a href="#credentials" class="flex justify-between items-center group py-1 border-b border-transparent hover:border-gold-500 transition-all">
-                        <span>04 / Credentials & Registry</span>
-                        <span class="text-xs font-mono text-gold-500 group-hover:translate-x-2 transition-transform">&rarr;</span>
-                    </a>
-                </nav>
-            </div>
-        </div>
-
-        <!-- Right Editorial Column: Showcased Blueprints & Certifications -->
-        <div class="lg:col-span-7 space-y-10" id="projects">
-            <div>
-                <div class="flex justify-between items-end border-b border-charcoal-900/10 dark:border-cream-100/10 pb-2 mb-6">
-                    <span class="text-xs font-mono tracking-wider text-gold-500 uppercase font-semibold">II. FEATURED BLUEPRINTS</span>
-                    <span class="text-[10px] font-mono text-charcoal-900/40 dark:text-cream-100/40">[CLICK CARDS TO FOCUS]</span>
-                </div>
-
-                <!-- Grid of Custom Project Cards -->
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    
-                    <!-- Project 01: AI Defense System -->
-                    <article class="article-focus bg-cream-50 dark:bg-charcoal-800 border border-charcoal-900/10 dark:border-cream-100/10 p-6 flex flex-col justify-between cursor-pointer group" onclick="toggleFocus(this)">
-                        <div>
-                            <div class="flex justify-between items-start mb-4">
-                                <span class="text-xs font-mono text-gold-500">[SYSTEM 01]</span>
-                                <span class="text-xs font-mono text-charcoal-900/40 dark:text-cream-100/40">2026</span>
-                            </div>
-                            <h3 class="font-serif text-2xl mb-2 group-hover:text-gold-500 transition-colors">AI-Powered Defense Platform</h3>
-                            <p class="text-xs leading-relaxed text-charcoal-900/70 dark:text-cream-100/70 mb-4">
-                                Dynamic communication & tactical response architecture. Features live spatial computer vision, automated incident processing, and robust cryptographic data flow.
-                            </p>
-                        </div>
-                        <div>
-                            <div class="flex flex-wrap gap-1.5">
-                                <span class="px-2 py-0.5 bg-charcoal-900/5 dark:bg-cream-100/5 text-[10px] font-mono">React.js</span>
-                                <span class="px-2 py-0.5 bg-charcoal-900/5 dark:bg-cream-100/5 text-[10px] font-mono">FastAPI</span>
-                                <span class="px-2 py-0.5 bg-charcoal-900/5 dark:bg-cream-100/5 text-[10px] font-mono">YOLOv8</span>
-                                <span class="px-2 py-0.5 bg-charcoal-900/5 dark:bg-cream-100/5 text-[10px] font-mono">Groq API</span>
-                            </div>
-                        </div>
-                    </article>
-
-                    <!-- Project 02: OncoVision AI Diagnostics -->
-                    <article class="article-focus bg-cream-50 dark:bg-charcoal-800 border border-charcoal-900/10 dark:border-cream-100/10 p-6 flex flex-col justify-between cursor-pointer group" onclick="toggleFocus(this)">
-                        <div>
-                            <div class="flex justify-between items-start mb-4">
-                                <span class="text-xs font-mono text-gold-500">[SYSTEM 02]</span>
-                                <span class="text-xs font-mono text-charcoal-900/40 dark:text-cream-100/40">2026</span>
-                            </div>
-                            <h3 class="font-serif text-2xl mb-2 group-hover:text-gold-500 transition-colors">OncoVision AI Diagnostics</h3>
-                            <p class="text-xs leading-relaxed text-charcoal-900/70 dark:text-cream-100/70 mb-4">
-                                Deep learning system for automated histopathology imaging. Features U-Net semantic segmentation and Grad-CAM layers for model decision heatmapping.
-                            </p>
-                        </div>
-                        <div>
-                            <div class="flex flex-wrap gap-1.5">
-                                <span class="px-2 py-0.5 bg-charcoal-900/5 dark:bg-cream-100/5 text-[10px] font-mono">PyTorch</span>
-                                <span class="px-2 py-0.5 bg-charcoal-900/5 dark:bg-cream-100/5 text-[10px] font-mono">OpenCV</span>
-                                <span class="px-2 py-0.5 bg-charcoal-900/5 dark:bg-cream-100/5 text-[10px] font-mono">Streamlit</span>
-                            </div>
-                        </div>
-                    </article>
-
-                    <!-- Project 03: JobMatch Portal -->
-                    <article class="article-focus bg-cream-50 dark:bg-charcoal-800 border border-charcoal-900/10 dark:border-cream-100/10 p-6 flex flex-col justify-between cursor-pointer group" onclick="toggleFocus(this)">
-                        <div>
-                            <div class="flex justify-between items-start mb-4">
-                                <span class="text-xs font-mono text-gold-500">[SYSTEM 03]</span>
-                                <span class="text-xs font-mono text-charcoal-900/40 dark:text-cream-100/40">2025</span>
-                            </div>
-                            <h3 class="font-serif text-2xl mb-2 group-hover:text-gold-500 transition-colors">JobMatch Web Platform</h3>
-                            <p class="text-xs leading-relaxed text-charcoal-900/70 dark:text-cream-100/70 mb-4">
-                                Full-stack portal featuring robust relational schemas, multi-tier user role permissions, and scalable server-side query flows.
-                            </p>
-                        </div>
-                        <div>
-                            <div class="flex flex-wrap gap-1.5">
-                                <span class="px-2 py-0.5 bg-charcoal-900/5 dark:bg-cream-100/5 text-[10px] font-mono">HTML5</span>
-                                <span class="px-2 py-0.5 bg-charcoal-900/5 dark:bg-cream-100/5 text-[10px] font-mono">CSS3</span>
-                                <span class="px-2 py-0.5 bg-charcoal-900/5 dark:bg-cream-100/5 text-[10px] font-mono">JavaScript</span>
-                                <span class="px-2 py-0.5 bg-charcoal-900/5 dark:bg-cream-100/5 text-[10px] font-mono">PHP</span>
-                                <span class="px-2 py-0.5 bg-charcoal-900/5 dark:bg-cream-100/5 text-[10px] font-mono">MySQL</span>
-                            </div>
-                        </div>
-                    </article>
-
-                    <!-- Project 04: Library Manager -->
-                    <article class="article-focus bg-cream-50 dark:bg-charcoal-800 border border-charcoal-900/10 dark:border-cream-100/10 p-6 flex flex-col justify-between cursor-pointer group" onclick="toggleFocus(this)">
-                        <div>
-                            <div class="flex justify-between items-start mb-4">
-                                <span class="text-xs font-mono text-gold-500">[SYSTEM 04]</span>
-                                <span class="text-xs font-mono text-charcoal-900/40 dark:text-cream-100/40">2025</span>
-                            </div>
-                            <h3 class="font-serif text-2xl mb-2 group-hover:text-gold-500 transition-colors">Java Core Library System</h3>
-                            <p class="text-xs leading-relaxed text-charcoal-900/70 dark:text-cream-100/70 mb-4">
-                                Console-based database application constructed entirely on OOP mechanics, leveraging concurrent Collections frameworks.
-                            </p>
-                        </div>
-                        <div>
-                            <div class="flex flex-wrap gap-1.5">
-                                <span class="px-2 py-0.5 bg-charcoal-900/5 dark:bg-cream-100/5 text-[10px] font-mono">Java Core</span>
-                                <span class="px-2 py-0.5 bg-charcoal-900/5 dark:bg-cream-100/5 text-[10px] font-mono">OOP Paradigm</span>
-                                <span class="px-2 py-0.5 bg-charcoal-900/5 dark:bg-cream-100/5 text-[10px] font-mono">Collections</span>
-                            </div>
-                        </div>
-                    </article>
-
+                <div class="mt-12 pt-8 border-t border-dashed border-charcoal-900/20 dark:border-cream-100/20 no-print">
+                    <span class="text-[10px] font-mono uppercase tracking-[0.2em] block mb-4 text-charcoal-900/50 dark:text-cream-100/50">ARCHIVE CONTENTS</span>
+                    <nav class="space-y-2 font-serif text-lg">
+                        <a href="#experience" class="flex justify-between items-center group py-1 border-b border-transparent hover:border-gold-500 transition-all">
+                            <span>01 / The Tenure Log</span>
+                            <span class="text-xs font-mono text-gold-500 group-hover:translate-x-2 transition-transform">&rarr;</span>
+                        </a>
+                        <a href="#projects" class="flex justify-between items-center group py-1 border-b border-transparent hover:border-gold-500 transition-all">
+                            <span>02 / Blueprints & Systems</span>
+                            <span class="text-xs font-mono text-gold-500 group-hover:translate-x-2 transition-transform">&rarr;</span>
+                        </a>
+                        <a href="#profiles" class="flex justify-between items-center group py-1 border-b border-transparent hover:border-gold-500 transition-all">
+                            <span>03 / Algorithmic Registries</span>
+                            <span class="text-xs font-mono text-gold-500 group-hover:translate-x-2 transition-transform">&rarr;</span>
+                        </a>
+                        <a href="#skills" class="flex justify-between items-center group py-1 border-b border-transparent hover:border-gold-500 transition-all">
+                            <span>04 / Technical Taxonomy</span>
+                            <span class="text-xs font-mono text-gold-500 group-hover:translate-x-2 transition-transform">&rarr;</span>
+                        </a>
+                    </nav>
                 </div>
             </div>
 
-            <!-- Licenses & Certifications Sub-Section -->
-            <div class="pt-8 border-t border-charcoal-900/10 dark:border-cream-100/10">
-                <div class="flex justify-between items-end border-b border-charcoal-900/10 dark:border-cream-100/10 pb-2 mb-6">
-                    <span class="text-xs font-mono tracking-wider text-gold-500 uppercase font-semibold">III. REGISTERED CREDENTIALS</span>
-                    <span class="text-[10px] font-mono text-charcoal-900/40 dark:text-cream-100/40">[VERIFIED CERTIFICATIONS]</span>
+            <!-- Right Editorial Column: Showcased Blueprints & Certifications -->
+            <div class="lg:col-span-7 space-y-12" id="projects">
+                <div>
+                    <div class="flex justify-between items-end border-b border-charcoal-900/10 dark:border-cream-100/10 pb-2 mb-6">
+                        <span class="text-xs font-mono tracking-wider text-gold-500 uppercase font-semibold">II. FEATURED BLUEPRINTS</span>
+                        <span class="text-[10px] font-mono text-charcoal-900/40 dark:text-cream-100/40">[CLICK BLUEPRINTS TO FOCUS]</span>
+                    </div>
+
+                    <!-- Editorial Stack of Custom Project Cards (Restructured based on image_2ab969.png & image_2ab9ce.png) -->
+                    <div class="space-y-8">
+                        
+                        <!-- Blueprint 01: AI-Powered Defense Communication & Incident Response System -->
+                        <article class="article-focus bg-cream-50 dark:bg-charcoal-800 border border-charcoal-900/10 dark:border-cream-100/10 p-6 flex flex-col justify-between cursor-pointer group" onclick="toggleFocus(this)">
+                            <div>
+                                <!-- Header of Project details -->
+                                <div class="flex justify-between items-start mb-4 border-b border-charcoal-900/10 dark:border-cream-100/10 pb-3">
+                                    <div>
+                                        <span class="text-xs font-mono text-gold-500 uppercase block font-semibold tracking-wider">[BLUEPRINT 01]</span>
+                                        <h3 class="font-serif text-2xl lg:text-3xl text-charcoal-900 dark:text-cream-100 group-hover:text-gold-500 transition-colors">
+                                            AI-Powered Defense Communication & Incident Response System
+                                        </h3>
+                                        <p class="text-[11px] font-mono text-charcoal-900/50 dark:text-cream-100/50 uppercase tracking-wider mt-1">
+                                            Real-time Surveillance, Incident Detection, and Voice Analytics
+                                        </p>
+                                    </div>
+                                    <span class="text-xs font-mono shrink-0 text-gold-500 bg-gold-500/10 px-2.5 py-1 rounded">2026</span>
+                                </div>
+
+                                <!-- Detailed Dual Column Layout referencing image_2ab969.png -->
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-xs mt-4">
+                                    <!-- Left Parameters -->
+                                    <div class="space-y-4">
+                                        <div>
+                                            <h4 class="font-mono font-bold text-gold-500 flex items-center gap-1.5 uppercase tracking-wider">
+                                                <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
+                                                Problem Statement
+                                            </h4>
+                                            <p class="text-charcoal-900/70 dark:text-cream-100/70 leading-relaxed text-justify mt-1">
+                                                Automated perimeter defense models lack fast, natural-voice reporting, meaning detection metrics fail to trigger rapid multi-agency alerts.
+                                            </p>
+                                        </div>
+                                        <div>
+                                            <h4 class="font-mono font-bold text-emerald-600 dark:text-emerald-400 flex items-center gap-1.5 uppercase tracking-wider">
+                                                <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                                Solution Approach
+                                            </h4>
+                                            <p class="text-charcoal-900/70 dark:text-cream-100/70 leading-relaxed text-justify mt-1">
+                                                Developed an elegant FastAPI/React framework processing continuous surveillance inputs via YOLOv8, Whisper speech recognition, and Llama 3.3 for incident report pipelines.
+                                            </p>
+                                        </div>
+                                        <div>
+                                            <h4 class="font-mono font-bold text-amber-600 dark:text-amber-400 flex items-center gap-1.5 uppercase tracking-wider">
+                                                <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+                                                Key Challenges Faced
+                                            </h4>
+                                            <p class="text-charcoal-900/70 dark:text-cream-100/70 leading-relaxed text-justify mt-1">
+                                                Ensuring low latency speech-to-text transcription during high network stress conditions. Handled concurrent asynchronous threads to process data efficiently.
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <!-- Right Parameters: Mock Flows & Diagrams -->
+                                    <div class="space-y-4">
+                                        <!-- System Architecture Box -->
+                                        <div>
+                                            <h4 class="font-mono font-bold text-charcoal-900/40 dark:text-cream-100/40 flex items-center gap-1.5 uppercase tracking-wider">
+                                                <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="18" cy="5" r="3"></circle><circle cx="6" cy="12" r="3"></circle><circle cx="18" cy="19" r="3"></circle><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line></svg>
+                                                System Architecture
+                                            </h4>
+                                            <div class="mt-1.5 p-3 bg-cream-100 dark:bg-charcoal-900 border border-charcoal-900/10 dark:border-cream-100/10 rounded-lg space-y-1 font-mono text-[10px]">
+                                                <div class="flex justify-between items-center bg-gold-500/10 p-1.5 rounded">
+                                                    <span class="text-gold-600 dark:text-gold-400 font-bold">[Edge Camera YOLOv8]</span>
+                                                    <span>&rarr;</span>
+                                                    <span class="font-bold">[FastAPI Host]</span>
+                                                </div>
+                                                <div class="text-center text-[9px] opacity-50 py-0.5">// (WebSockets Live Feed)</div>
+                                                <div class="flex justify-between items-center bg-charcoal-900/5 dark:bg-cream-100/5 p-1.5 rounded">
+                                                    <span class="text-red-500 font-bold">[Whisper Audio]</span>
+                                                    <span>&rarr;</span>
+                                                    <span class="text-emerald-500 font-bold">[Llama Report Gen]</span>
+                                                </div>
+                                                <div class="bg-emerald-500/5 text-center p-1 border border-emerald-500/20 rounded mt-1 font-semibold text-[9px]">
+                                                    [PostgreSQL Persistent Storage]
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Project Screenshot Mock Area -->
+                                        <div>
+                                            <h4 class="font-mono font-bold text-charcoal-900/40 dark:text-cream-100/40 flex items-center gap-1.5 uppercase tracking-wider">
+                                                <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><polyline points="21 15 16 10 5 21"></polyline></svg>
+                                                Project Screenshot Area
+                                            </h4>
+                                            <div class="mt-1.5 p-4 border border-dashed border-charcoal-900/30 dark:border-cream-100/30 rounded-lg flex flex-col items-center justify-center text-center">
+                                                <svg class="w-6 h-6 text-gold-500 mb-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+                                                <span class="font-bold text-[10px]">UI Dashboard Blueprint</span>
+                                                <p class="text-[9px] opacity-60">Active YOLO Camera Feeds & Text Transcription Output</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Bottom learnings and future scope row matching image_2ab9ce.png -->
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4 pt-4 border-t border-charcoal-900/10 dark:border-cream-100/10 text-xs">
+                                    <div>
+                                        <h5 class="font-mono font-bold text-indigo-500 uppercase tracking-wider flex items-center gap-1">
+                                            <svg class="w-3 h-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+                                            Learnings
+                                        </h5>
+                                        <p class="text-charcoal-900/70 dark:text-cream-100/70 leading-relaxed text-justify mt-1 text-[11px]">
+                                            Mastered WebSockets connection life cycles, lightweight dynamic parsing, and real-time streaming constraints.
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <h5 class="font-mono font-bold text-indigo-500 uppercase tracking-wider flex items-center gap-1">
+                                            <svg class="w-3 h-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline><polyline points="17 6 23 6 23 12"></polyline></svg>
+                                            Future Scope
+                                        </h5>
+                                        <p class="text-charcoal-900/70 dark:text-cream-100/70 leading-relaxed text-justify mt-1 text-[11px]">
+                                            Incorporate thermal vision matrices and lightweight offline LLM structures for isolated edge computing deployments.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Footer of tags & Link -->
+                            <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center mt-5 pt-4 border-t border-dashed border-charcoal-900/20 dark:border-cream-100/20 gap-3">
+                                <div class="flex flex-wrap gap-1.5">
+                                    <span class="px-2 py-0.5 bg-charcoal-900/5 dark:bg-cream-100/5 text-[10px] font-mono">React.js</span>
+                                    <span class="px-2 py-0.5 bg-charcoal-900/5 dark:bg-cream-100/5 text-[10px] font-mono">FastAPI</span>
+                                    <span class="px-2 py-0.5 bg-charcoal-900/5 dark:bg-cream-100/5 text-[10px] font-mono">PostgreSQL</span>
+                                    <span class="px-2 py-0.5 bg-charcoal-900/5 dark:bg-cream-100/5 text-[10px] font-mono">OpenCV</span>
+                                    <span class="px-2 py-0.5 bg-charcoal-900/5 dark:bg-cream-100/5 text-[10px] font-mono">YOLOv8</span>
+                                    <span class="px-2 py-0.5 bg-charcoal-900/5 dark:bg-cream-100/5 text-[10px] font-mono">Llama 3.3</span>
+                                </div>
+                                <a href="https://github.com/SaiSreeHarsha2005" target="_blank" rel="noopener noreferrer" class="text-xs font-mono font-bold hover:text-gold-500 flex items-center gap-1 shrink-0 border border-charcoal-900/20 dark:border-cream-100/20 px-3 py-1.5 rounded-lg bg-cream-100 dark:bg-charcoal-900">
+                                    <span>Repository</span> &rarr;
+                                </a>
+                            </div>
+                        </article>
+
+                        <!-- Blueprint 02: OncoVision AI Diagnostics System -->
+                        <article class="article-focus bg-cream-50 dark:bg-charcoal-800 border border-charcoal-900/10 dark:border-cream-100/10 p-6 flex flex-col justify-between cursor-pointer group" onclick="toggleFocus(this)">
+                            <div>
+                                <div class="flex justify-between items-start mb-4 border-b border-charcoal-900/10 dark:border-cream-100/10 pb-3">
+                                    <div>
+                                        <span class="text-xs font-mono text-gold-500 uppercase block font-semibold tracking-wider">[BLUEPRINT 02]</span>
+                                        <h3 class="font-serif text-2xl lg:text-3xl text-charcoal-900 dark:text-cream-100 group-hover:text-gold-500 transition-colors">
+                                            OncoVision AI Diagnostics System
+                                        </h3>
+                                        <p class="text-[11px] font-mono text-charcoal-900/50 dark:text-cream-100/50 uppercase tracking-wider mt-1">
+                                            Deep Learning Histopathology Processing & Classification Pipeline
+                                        </p>
+                                    </div>
+                                    <span class="text-xs font-mono shrink-0 text-gold-500 bg-gold-500/10 px-2.5 py-1 rounded">2026</span>
+                                </div>
+
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-xs mt-4">
+                                    <div class="space-y-4">
+                                        <div>
+                                            <h4 class="font-mono font-bold text-gold-500 flex items-center gap-1.5 uppercase tracking-wider">
+                                                <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
+                                                Problem Statement
+                                            </h4>
+                                            <p class="text-charcoal-900/70 dark:text-cream-100/70 leading-relaxed text-justify mt-1">
+                                                Medical diagnostic platforms struggle with automated localization and identification accuracy of complex tumor bounds from high-definition histopathology frames.
+                                            </p>
+                                        </div>
+                                        <div>
+                                            <h4 class="font-mono font-bold text-emerald-600 dark:text-emerald-400 flex items-center gap-1.5 uppercase tracking-wider">
+                                                <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                                Solution Approach
+                                            </h4>
+                                            <p class="text-charcoal-900/70 dark:text-cream-100/70 leading-relaxed text-justify mt-1">
+                                                Developed a Deep Learning paradigm based on PyTorch to evaluate tumor boundaries on 10,000+ medical images. Incorporated U-Net segmentation modules and Grad-CAM layers.
+                                            </p>
+                                        </div>
+                                        <div>
+                                            <h4 class="font-mono font-bold text-amber-600 dark:text-amber-400 flex items-center gap-1.5 uppercase tracking-wider">
+                                                <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+                                                Key Challenges Faced
+                                            </h4>
+                                            <p class="text-charcoal-900/70 dark:text-cream-100/70 leading-relaxed text-justify mt-1">
+                                                Optimizing heavy image spatial computations for standard hardware streams. Resolved by structuring custom convolutional kernels.
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="space-y-4">
+                                        <div>
+                                            <h4 class="font-mono font-bold text-charcoal-900/40 dark:text-cream-100/40 flex items-center gap-1.5 uppercase tracking-wider">
+                                                <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="18" cy="5" r="3"></circle><circle cx="6" cy="12" r="3"></circle><circle cx="18" cy="19" r="3"></circle><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line></svg>
+                                                System Architecture
+                                            </h4>
+                                            <div class="mt-1.5 p-3 bg-cream-100 dark:bg-charcoal-900 border border-charcoal-900/10 dark:border-cream-100/10 rounded-lg space-y-1 font-mono text-[10px]">
+                                                <div class="flex justify-between items-center bg-gold-500/10 p-1.5 rounded">
+                                                    <span class="text-gold-600 dark:text-gold-400 font-bold">[Pathology Inputs]</span>
+                                                    <span>&rarr;</span>
+                                                    <span class="font-bold">[CNN Classifier]</span>
+                                                </div>
+                                                <div class="text-center text-[9px] opacity-50 py-0.5">// (U-Net Boundary Pass)</div>
+                                                <div class="bg-emerald-500/5 text-center p-1.5 border border-emerald-500/20 rounded font-semibold">
+                                                    [Grad-CAM Decision Interpretability Map]
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div>
+                                            <h4 class="font-mono font-bold text-charcoal-900/40 dark:text-cream-100/40 flex items-center gap-1.5 uppercase tracking-wider">
+                                                <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><polyline points="21 15 16 10 5 21"></polyline></svg>
+                                                Project Screenshot Area
+                                            </h4>
+                                            <div class="mt-1.5 p-4 border border-dashed border-charcoal-900/30 dark:border-cream-100/30 rounded-lg flex flex-col items-center justify-center text-center">
+                                                <svg class="w-6 h-6 text-gold-500 mb-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="22" y1="12" x2="18" y2="12"></line><line x1="6" y1="12" x2="2" y2="12"></line><line x1="12" y1="6" x2="12" y2="2"></line><line x1="12" y1="22" x2="12" y2="18"></line></svg>
+                                                <span class="font-bold text-[10px]">Grad-CAM Heatmap Interface</span>
+                                                <p class="text-[9px] opacity-60">Real-time Tumor Localization Rendered on Streamlit</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center mt-5 pt-4 border-t border-dashed border-charcoal-900/20 dark:border-cream-100/20 gap-3">
+                                <div class="flex flex-wrap gap-1.5">
+                                    <span class="px-2 py-0.5 bg-charcoal-900/5 dark:bg-cream-100/5 text-[10px] font-mono">Python 3</span>
+                                    <span class="px-2 py-0.5 bg-charcoal-900/5 dark:bg-cream-100/5 text-[10px] font-mono">PyTorch</span>
+                                    <span class="px-2 py-0.5 bg-charcoal-900/5 dark:bg-cream-100/5 text-[10px] font-mono">OpenCV</span>
+                                    <span class="px-2 py-0.5 bg-charcoal-900/5 dark:bg-cream-100/5 text-[10px] font-mono">Streamlit</span>
+                                </div>
+                                <a href="https://github.com/SaiSreeHarsha2005" target="_blank" rel="noopener noreferrer" class="text-xs font-mono font-bold hover:text-gold-500 flex items-center gap-1 shrink-0 border border-charcoal-900/20 dark:border-cream-100/20 px-3 py-1.5 rounded-lg bg-cream-100 dark:bg-charcoal-900">
+                                    <span>Repository</span> &rarr;
+                                </a>
+                            </div>
+                        </article>
+
+                        <!-- Blueprint 03: JobMatch Job Portal Web Application -->
+                        <article class="article-focus bg-cream-50 dark:bg-charcoal-800 border border-charcoal-900/10 dark:border-cream-100/10 p-6 flex flex-col justify-between cursor-pointer group" onclick="toggleFocus(this)">
+                            <div>
+                                <div class="flex justify-between items-start mb-4 border-b border-charcoal-900/10 dark:border-cream-100/10 pb-3">
+                                    <div>
+                                        <span class="text-xs font-mono text-gold-500 uppercase block font-semibold tracking-wider">[BLUEPRINT 03]</span>
+                                        <h3 class="font-serif text-2xl lg:text-3xl text-charcoal-900 dark:text-cream-100 group-hover:text-gold-500 transition-colors">
+                                            JobMatch Job Portal Web Application
+                                        </h3>
+                                        <p class="text-[11px] font-mono text-charcoal-900/50 dark:text-cream-100/50 uppercase tracking-wider mt-1">
+                                            Full-Stack Application with Multi-Tier User Role Management
+                                        </p>
+                                    </div>
+                                    <span class="text-xs font-mono shrink-0 text-gold-500 bg-gold-500/10 px-2.5 py-1 rounded">2025</span>
+                                </div>
+
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-xs mt-4">
+                                    <div class="space-y-4">
+                                        <div>
+                                            <h4 class="font-mono font-bold text-gold-500 flex items-center gap-1.5 uppercase tracking-wider">
+                                                <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
+                                                Problem Statement
+                                            </h4>
+                                            <p class="text-charcoal-900/70 dark:text-cream-100/70 leading-relaxed text-justify mt-1">
+                                                Traditional candidate matching sites fail to support distinct dashboard experiences for jobseekers and recruiters without severe layout delays or query bottlenecks.
+                                            </p>
+                                        </div>
+                                        <div>
+                                            <h4 class="font-mono font-bold text-emerald-600 dark:text-emerald-400 flex items-center gap-1.5 uppercase tracking-wider">
+                                                <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                                Solution Approach
+                                            </h4>
+                                            <p class="text-charcoal-900/70 dark:text-cream-100/70 leading-relaxed text-justify mt-1">
+                                                Constructed a robust relational schema utilizing PHP and MySQL. Engineered custom session-based routing to keep interactions swift and access strictly validated.
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="space-y-4">
+                                        <div>
+                                            <h4 class="font-mono font-bold text-charcoal-900/40 dark:text-cream-100/40 flex items-center gap-1.5 uppercase tracking-wider">
+                                                <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="18" cy="5" r="3"></circle><circle cx="6" cy="12" r="3"></circle><circle cx="18" cy="19" r="3"></circle><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line></svg>
+                                                System Architecture
+                                            </h4>
+                                            <div class="mt-1.5 p-3 bg-cream-100 dark:bg-charcoal-900 border border-charcoal-900/10 dark:border-cream-100/10 rounded-lg space-y-1 font-mono text-[10px]">
+                                                <div class="flex justify-between items-center bg-gold-500/10 p-1.5 rounded">
+                                                    <span class="text-gold-600 dark:text-gold-400 font-bold">[Front-End Client]</span>
+                                                    <span>&rarr;</span>
+                                                    <span class="font-bold">[PHP Controller]</span>
+                                                </div>
+                                                <div class="text-center text-[9px] opacity-50 py-0.5">// (Secure Session Authorization)</div>
+                                                <div class="bg-charcoal-900/5 text-center p-1.5 rounded border border-charcoal-900/10 dark:border-cream-100/10 font-mono">
+                                                    [MySQL Relational Databases]
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center mt-5 pt-4 border-t border-dashed border-charcoal-900/20 dark:border-cream-100/20 gap-3">
+                                <div class="flex flex-wrap gap-1.5">
+                                    <span class="px-2 py-0.5 bg-charcoal-900/5 dark:bg-cream-100/5 text-[10px] font-mono">PHP</span>
+                                    <span class="px-2 py-0.5 bg-charcoal-900/5 dark:bg-cream-100/5 text-[10px] font-mono">MySQL</span>
+                                    <span class="px-2 py-0.5 bg-charcoal-900/5 dark:bg-cream-100/5 text-[10px] font-mono">HTML5</span>
+                                    <span class="px-2 py-0.5 bg-charcoal-900/5 dark:bg-cream-100/5 text-[10px] font-mono">CSS3</span>
+                                    <span class="px-2 py-0.5 bg-charcoal-900/5 dark:bg-cream-100/5 text-[10px] font-mono">JavaScript</span>
+                                </div>
+                                <a href="https://github.com/SaiSreeHarsha2005" target="_blank" rel="noopener noreferrer" class="text-xs font-mono font-bold hover:text-gold-500 flex items-center gap-1 shrink-0 border border-charcoal-900/20 dark:border-cream-100/20 px-3 py-1.5 rounded-lg bg-cream-100 dark:bg-charcoal-900">
+                                    <span>Repository</span> &rarr;
+                                </a>
+                            </div>
+                        </article>
+
+                    </div>
                 </div>
 
-                <div class="border border-charcoal-900/10 dark:border-cream-100/10 bg-cream-50 dark:bg-charcoal-800 divide-y divide-charcoal-900/10 dark:divide-cream-100/10">
-                    <!-- Certification 1 -->
-                    <div class="p-4 flex flex-col sm:flex-row sm:items-center justify-between gap-2 hover:bg-gold-500/[0.02] transition-colors">
-                        <div>
-                            <h5 class="font-serif text-lg leading-tight text-charcoal-900 dark:text-cream-100">Introduction to IoT and Digital Transformation</h5>
-                            <p class="text-xs font-mono text-charcoal-900/60 dark:text-cream-100/60">Cisco Networking Academy</p>
-                        </div>
-                        <span class="text-xs font-mono shrink-0 text-gold-500 bg-gold-500/5 dark:bg-gold-500/10 px-2 py-0.5 rounded">APR 2026</span>
+                <!-- Coding Profiles Sub-Section (Directly requested based on image_2aa763.png) -->
+                <div class="pt-8 border-t border-charcoal-900/10 dark:border-cream-100/10" id="profiles">
+                    <div class="flex justify-between items-end border-b border-charcoal-900/10 dark:border-cream-100/10 pb-2 mb-6">
+                        <span class="text-xs font-mono tracking-wider text-gold-500 uppercase font-semibold">III. ALGORITHMIC REGISTRIES</span>
+                        <span class="text-[10px] font-mono text-charcoal-900/40 dark:text-cream-100/40">[DSA PROFILES]</span>
                     </div>
 
-                    <!-- Certification 2 -->
-                    <div class="p-4 flex flex-col sm:flex-row sm:items-center justify-between gap-2 hover:bg-gold-500/[0.02] transition-colors">
-                        <div>
-                            <h5 class="font-serif text-lg leading-tight text-charcoal-900 dark:text-cream-100">Python Essentials</h5>
-                            <p class="text-xs font-mono text-charcoal-900/60 dark:text-cream-100/60">Cisco Networking Academy</p>
-                        </div>
-                        <span class="text-xs font-mono shrink-0 text-gold-500 bg-gold-500/5 dark:bg-gold-500/10 px-2 py-0.5 rounded">NOV 2025</span>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-4">
+                        
+                        <!-- HackerRank Profile Card -->
+                        <a href="https://www.hackerrank.com/profile/qasaisreeharsha1" target="_blank" rel="noopener noreferrer" class="border border-charcoal-900/10 dark:border-cream-100/10 bg-cream-50 dark:bg-charcoal-800 p-4 rounded-xl hover:border-gold-500 transition-all group flex flex-col justify-between">
+                            <div>
+                                <span class="text-[10px] font-mono text-gold-500 block mb-1">HackerRank username *</span>
+                                <h4 class="font-mono text-xs font-bold break-all text-charcoal-900 dark:text-cream-100">qasaisreeharsha1</h4>
+                            </div>
+                            <span class="text-right text-xs text-gold-500 font-mono mt-3 block group-hover:translate-x-1 transition-transform">&rarr;</span>
+                        </a>
+
+                        <!-- LeetCode Profile Card -->
+                        <a href="https://leetcode.com/u/saisreeharsha_2809/" target="_blank" rel="noopener noreferrer" class="border border-charcoal-900/10 dark:border-cream-100/10 bg-cream-50 dark:bg-charcoal-800 p-4 rounded-xl hover:border-gold-500 transition-all group flex flex-col justify-between">
+                            <div>
+                                <span class="text-[10px] font-mono text-gold-500 block mb-1">LeetCode username *</span>
+                                <h4 class="font-mono text-xs font-bold break-all text-charcoal-900 dark:text-cream-100">saisreeharsha_2809</h4>
+                            </div>
+                            <span class="text-right text-xs text-gold-500 font-mono mt-3 block group-hover:translate-x-1 transition-transform">&rarr;</span>
+                        </a>
+
+                        <!-- InterviewBit Profile Card -->
+                        <a href="https://www.interviewbit.com/profile/m-sai-sree-harsha" target="_blank" rel="noopener noreferrer" class="border border-charcoal-900/10 dark:border-cream-100/10 bg-cream-50 dark:bg-charcoal-800 p-4 rounded-xl hover:border-gold-500 transition-all group flex flex-col justify-between">
+                            <div>
+                                <span class="text-[10px] font-mono text-gold-500 block mb-1">InterviewBit username *</span>
+                                <h4 class="font-mono text-xs font-bold break-all text-charcoal-900 dark:text-cream-100">m-sai-sree-harsha</h4>
+                            </div>
+                            <span class="text-right text-xs text-gold-500 font-mono mt-3 block group-hover:translate-x-1 transition-transform">&rarr;</span>
+                        </a>
+
+                        <!-- CodeChef Profile Card -->
+                        <a href="https://www.codechef.com/users/saisreeharsha5" target="_blank" rel="noopener noreferrer" class="border border-charcoal-900/10 dark:border-cream-100/10 bg-cream-50 dark:bg-charcoal-800 p-4 rounded-xl hover:border-gold-500 transition-all group flex flex-col justify-between">
+                            <div>
+                                <span class="text-[10px] font-mono text-gold-500 block mb-1">CodeChef username *</span>
+                                <h4 class="font-mono text-xs font-bold break-all text-charcoal-900 dark:text-cream-100">saisreeharsha5</h4>
+                            </div>
+                            <span class="text-right text-xs text-gold-500 font-mono mt-3 block group-hover:translate-x-1 transition-transform">&rarr;</span>
+                        </a>
+
+                        <!-- Codeforces Profile Card -->
+                        <a href="https://codeforces.com/profile/saisreeharsha5" target="_blank" rel="noopener noreferrer" class="border border-charcoal-900/10 dark:border-cream-100/10 bg-cream-50 dark:bg-charcoal-800 p-4 rounded-xl hover:border-gold-500 transition-all group flex flex-col justify-between">
+                            <div>
+                                <span class="text-[10px] font-mono text-gold-500 block mb-1">Codeforces username *</span>
+                                <h4 class="font-mono text-xs font-bold break-all text-charcoal-900 dark:text-cream-100">saisreeharsha5</h4>
+                            </div>
+                            <span class="text-right text-xs text-gold-500 font-mono mt-3 block group-hover:translate-x-1 transition-transform">&rarr;</span>
+                        </a>
+
+                    </div>
+                </div>
+
+                <!-- Licenses & Certifications Sub-Section -->
+                <div class="pt-8 border-t border-charcoal-900/10 dark:border-cream-100/10">
+                    <div class="flex justify-between items-end border-b border-charcoal-900/10 dark:border-cream-100/10 pb-2 mb-6">
+                        <span class="text-xs font-mono tracking-wider text-gold-500 uppercase font-semibold">IV. REGISTERED CREDENTIALS</span>
+                        <span class="text-[10px] font-mono text-charcoal-900/40 dark:text-cream-100/40">[VERIFIED CERTIFICATIONS]</span>
                     </div>
 
-                    <!-- Certification 3 -->
-                    <div class="p-4 flex flex-col sm:flex-row sm:items-center justify-between gap-2 hover:bg-gold-500/[0.02] transition-colors">
-                        <div>
-                            <h5 class="font-serif text-lg leading-tight text-charcoal-900 dark:text-cream-100">CCNA: Introduction to Networks</h5>
-                            <p class="text-xs font-mono text-charcoal-900/60 dark:text-cream-100/60">Cisco Networking Academy</p>
+                    <div class="border border-charcoal-900/10 dark:border-cream-100/10 bg-cream-50 dark:bg-charcoal-800 divide-y divide-charcoal-900/10 dark:divide-cream-100/10">
+                        <!-- Certification 1 -->
+                        <div class="p-4 flex flex-col sm:flex-row sm:items-center justify-between gap-2 hover:bg-gold-500/[0.02] transition-colors">
+                            <div>
+                                <h5 class="font-serif text-lg leading-tight text-charcoal-900 dark:text-cream-100">Introduction to IoT and Digital Transformation</h5>
+                                <p class="text-xs font-mono text-charcoal-900/60 dark:text-cream-100/60">Cisco Networking Academy</p>
+                            </div>
+                            <span class="text-xs font-mono shrink-0 text-gold-500 bg-gold-500/5 dark:bg-gold-500/10 px-2 py-0.5 rounded">APR 2026</span>
                         </div>
-                        <span class="text-xs font-mono shrink-0 text-gold-500 bg-gold-500/5 dark:bg-gold-500/10 px-2 py-0.5 rounded">OCT 2025</span>
-                    </div>
 
-                    <!-- Certification 4 -->
-                    <div class="p-4 flex flex-col sm:flex-row sm:items-center justify-between gap-2 hover:bg-gold-500/[0.02] transition-colors">
-                        <div>
-                            <h5 class="font-serif text-lg leading-tight text-charcoal-900 dark:text-cream-100">Networking Essentials Certification</h5>
-                            <p class="text-xs font-mono text-charcoal-900/60 dark:text-cream-100/60">Cisco Networking Academy</p>
+                        <!-- Certification 2 -->
+                        <div class="p-4 flex flex-col sm:flex-row sm:items-center justify-between gap-2 hover:bg-gold-500/[0.02] transition-colors">
+                            <div>
+                                <h5 class="font-serif text-lg leading-tight text-charcoal-900 dark:text-cream-100">Python Essentials</h5>
+                                <p class="text-xs font-mono text-charcoal-900/60 dark:text-cream-100/60">Cisco Networking Academy</p>
+                            </div>
+                            <span class="text-xs font-mono shrink-0 text-gold-500 bg-gold-500/5 dark:bg-gold-500/10 px-2 py-0.5 rounded">NOV 2025</span>
                         </div>
-                        <span class="text-xs font-mono shrink-0 text-gold-500 bg-gold-500/5 dark:bg-gold-500/10 px-2 py-0.5 rounded">OCT 2025</span>
-                    </div>
 
-                    <!-- Certification 5 -->
-                    <div class="p-4 flex flex-col sm:flex-row sm:items-center justify-between gap-2 hover:bg-gold-500/[0.02] transition-colors">
-                        <div>
-                            <h5 class="font-serif text-lg leading-tight text-charcoal-900 dark:text-cream-100">The Joy of Computing using Python</h5>
-                            <p class="text-xs font-mono text-charcoal-900/60 dark:text-cream-100/60">NPTEL &bull; ID: NPTEL24CS113S75020036204219395</p>
+                        <!-- Certification 3 -->
+                        <div class="p-4 flex flex-col sm:flex-row sm:items-center justify-between gap-2 hover:bg-gold-500/[0.02] transition-colors">
+                            <div>
+                                <h5 class="font-serif text-lg leading-tight text-charcoal-900 dark:text-cream-100">CCNA: Introduction to Networks</h5>
+                                <p class="text-xs font-mono text-charcoal-900/60 dark:text-cream-100/60">Cisco Networking Academy</p>
+                            </div>
+                            <span class="text-xs font-mono shrink-0 text-gold-500 bg-gold-500/5 dark:bg-gold-500/10 px-2 py-0.5 rounded">OCT 2025</span>
                         </div>
-                        <span class="text-xs font-mono shrink-0 text-gold-500 bg-gold-500/5 dark:bg-gold-500/10 px-2 py-0.5 rounded">OCT 2024</span>
-                    </div>
 
-                    <!-- Certification 6 -->
-                    <div class="p-4 flex flex-col sm:flex-row sm:items-center justify-between gap-2 hover:bg-gold-500/[0.02] transition-colors">
-                        <div>
-                            <h5 class="font-serif text-lg leading-tight text-charcoal-900 dark:text-cream-100">CLP: Advanced Programming in C</h5>
-                            <p class="text-xs font-mono text-charcoal-900/60 dark:text-cream-100/60">Cisco Networking Academy</p>
+                        <!-- Certification 4 -->
+                        <div class="p-4 flex flex-col sm:flex-row sm:items-center justify-between gap-2 hover:bg-gold-500/[0.02] transition-colors">
+                            <div>
+                                <h5 class="font-serif text-lg leading-tight text-charcoal-900 dark:text-cream-100">The Joy of Computing using Python</h5>
+                                <p class="text-xs font-mono text-charcoal-900/60 dark:text-cream-100/60">NPTEL &bull; ID: NPTEL24CS113S75020036204219395</p>
+                            </div>
+                            <span class="text-xs font-mono shrink-0 text-gold-500 bg-gold-500/5 dark:bg-gold-500/10 px-2 py-0.5 rounded">OCT 2024</span>
                         </div>
-                        <span class="text-xs font-mono shrink-0 text-gold-500 bg-gold-500/5 dark:bg-gold-500/10 px-2 py-0.5 rounded">MAY 2024</span>
-                    </div>
-
-                    <!-- Certification 7 -->
-                    <div class="p-4 flex flex-col sm:flex-row sm:items-center justify-between gap-2 hover:bg-gold-500/[0.02] transition-colors">
-                        <div>
-                            <h5 class="font-serif text-lg leading-tight text-charcoal-900 dark:text-cream-100">CLA: Programming Essentials in C</h5>
-                            <p class="text-xs font-mono text-charcoal-900/60 dark:text-cream-100/60">Cisco Networking Academy</p>
-                        </div>
-                        <span class="text-xs font-mono shrink-0 text-gold-500 bg-gold-500/5 dark:bg-gold-500/10 px-2 py-0.5 rounded">APR 2024</span>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <!-- Third Row: Experience Chronology (Designed as clean editorial multi-columns) -->
-    <section class="py-12 border-b border-charcoal-900/10 dark:border-cream-100/10" id="experience">
-        <div class="flex justify-between items-end border-b border-charcoal-900/10 dark:border-cream-100/10 pb-2 mb-8">
-            <span class="text-xs font-mono tracking-wider text-gold-500 uppercase font-semibold">IV. CHRONOLOGICAL DISPATCH (TENURES)</span>
-            <span class="text-xs font-mono text-charcoal-900/40 dark:text-cream-100/40">[RESEARCH & INDUSTRIAL PLACEMENTS]</span>
-        </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            
-            <!-- Experience Item 01 -->
-            <div class="space-y-3">
-                <span class="text-xs font-mono text-gold-500 block">01 / JAN 2026 – JULY 2026</span>
-                <h4 class="font-serif text-2xl tracking-tight">India Meteorological Department</h4>
-                <p class="text-xs font-mono uppercase tracking-wider text-charcoal-900/60 dark:text-cream-100/60">Project Intern // GIS Systems</p>
-                <p class="text-xs leading-relaxed text-charcoal-900/70 dark:text-cream-100/70 text-justify">
-                    Engineered automated meteorological GIS data pipeline. Decreased manual workload by 90% via structural scheduling algorithms generating 10+ daily charts. Designed low-latency, real-time dashboard from JSON logs, cutting system resolution cycle times by 60%.
-                </p>
+        <!-- Third Row: Experience Chronology (Designed as clean editorial multi-columns) -->
+        <section class="py-12 border-b border-charcoal-900/10 dark:border-cream-100/10" id="experience">
+            <div class="flex justify-between items-end border-b border-charcoal-900/10 dark:border-cream-100/10 pb-2 mb-8">
+                <span class="text-xs font-mono tracking-wider text-gold-500 uppercase font-semibold">V. CHRONOLOGICAL DISPATCH (TENURES)</span>
+                <span class="text-xs font-mono text-charcoal-900/40 dark:text-cream-100/40">[RESEARCH & INDUSTRIAL PLACEMENTS]</span>
             </div>
 
-            <!-- Experience Item 02 -->
-            <div class="space-y-3">
-                <span class="text-xs font-mono text-gold-500 block">02 / FEB 2026 – JUN 2026</span>
-                <h4 class="font-serif text-2xl tracking-tight">Nucleonix Systems Pvt. Ltd.</h4>
-                <p class="text-xs font-mono uppercase tracking-wider text-charcoal-900/60 dark:text-cream-100/60">Software Engineer Intern</p>
-                <p class="text-xs leading-relaxed text-charcoal-900/70 dark:text-cream-100/70 text-justify">
-                    Constructed React Native / Expo telemetry visualization client for robust tablets tracking radiation environments. Handled custom Bluetooth Low Energy (BLE) peripheral schemas, including device pairing, streaming, and telemetry state synchronizations.
-                </p>
-            </div>
-
-            <!-- Experience Item 03 -->
-            <div class="space-y-3">
-                <span class="text-xs font-mono text-gold-500 block">03 / APR 2026 – JULY 2026</span>
-                <h4 class="font-serif text-2xl tracking-tight">RavNova Frugal Innovation Research Pvt Ltd</h4>
-                <p class="text-xs font-mono uppercase tracking-wider text-charcoal-900/60 dark:text-cream-100/60">Web Extraction Intern</p>
-                <p class="text-xs leading-relaxed text-charcoal-900/70 dark:text-cream-100/70 text-justify">
-                    Designed scale-oriented scraping structures using Scrapy. Mitigated Cloudflare anti-bot firewalls, request rates, dynamic JavaScript UI obstacles via Headless browser frameworks, processing multi-gigabyte structures dynamically.
-                </p>
-            </div>
-
-            <!-- Experience Item 04 -->
-            <div class="space-y-3">
-                <span class="text-xs font-mono text-gold-500 block">04 / MAY 2025 – AUG 2025</span>
-                <h4 class="font-serif text-2xl tracking-tight">Supraja Technologies</h4>
-                <p class="text-xs font-mono uppercase tracking-wider text-charcoal-900/60 dark:text-cream-100/60">Cyber Security Intern</p>
-                <p class="text-xs leading-relaxed text-charcoal-900/70 dark:text-cream-100/70 text-justify">
-                    Built multi-threaded auditing console scripts parsing brute-force, dictionary, and NTLM algorithms. Participated in structural penetration cycles, uncovering API authorization flaws.
-                </p>
-            </div>
-
-        </div>
-    </section>
-
-    <!-- Fourth Row: Skills Inventory (Visual grid reminiscent of old advertisements columns) -->
-    <section class="py-12 border-b border-charcoal-900/10 dark:border-cream-100/10" id="skills">
-        <div class="flex justify-between items-end border-b border-charcoal-900/10 dark:border-cream-100/10 pb-2 mb-8">
-            <span class="text-xs font-mono tracking-wider text-gold-500 uppercase font-semibold">V. ARCHIVAL TOOLKIT</span>
-            <span class="text-xs font-mono text-charcoal-900/40 dark:text-cream-100/40">[LANGUAGES & SYSTEMS]</span>
-        </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-            
-            <!-- Category 1 -->
-            <div class="border border-charcoal-900/10 dark:border-cream-100/10 p-6 bg-cream-50 dark:bg-charcoal-800">
-                <span class="text-xs font-mono text-gold-500 uppercase block mb-4">// CORE COMPILERS</span>
-                <ul class="space-y-2 font-serif text-xl">
-                    <li class="flex justify-between items-center">
-                        <span>Java Standard</span>
-                        <span class="text-xs font-mono opacity-50">Core / OOP</span>
-                    </li>
-                    <li class="flex justify-between items-center">
-                        <span>Python 3.x</span>
-                        <span class="text-xs font-mono opacity-50">PyTorch / Scrapy</span>
-                    </li>
-                    <li class="flex justify-between items-center">
-                        <span>SQL Syntax</span>
-                        <span class="text-xs font-mono opacity-50">Complex Joins</span>
-                    </li>
-                    <li class="flex justify-between items-center">
-                        <span>C Programming</span>
-                        <span class="text-xs font-mono opacity-50">Procedural</span>
-                    </li>
-                </ul>
-            </div>
-
-            <!-- Category 2 -->
-            <div class="border border-charcoal-900/10 dark:border-cream-100/10 p-6 bg-cream-50 dark:bg-charcoal-800">
-                <span class="text-xs font-mono text-gold-500 uppercase block mb-4">// FRAMEWORKS & PIPELINES</span>
-                <ul class="space-y-2 font-serif text-xl">
-                    <li class="flex justify-between items-center">
-                        <span>React Native</span>
-                        <span class="text-xs font-mono opacity-50">Expo Ecosystem</span>
-                    </li>
-                    <li class="flex justify-between items-center">
-                        <span>FastAPI / Node</span>
-                        <span class="text-xs font-mono opacity-50">Asynchronous APIs</span>
-                    </li>
-                    <li class="flex justify-between items-center">
-                        <span>OpenCV & YOLOv8</span>
-                        <span class="text-xs font-mono opacity-50">Computer Vision</span>
-                    </li>
-                    <li class="flex justify-between items-center">
-                        <span>React.js</span>
-                        <span class="text-xs font-mono opacity-50">Single Page Apps</span>
-                    </li>
-                </ul>
-            </div>
-
-            <!-- Category 3 -->
-            <div class="border border-charcoal-900/10 dark:border-cream-100/10 p-6 bg-cream-50 dark:bg-charcoal-800">
-                <span class="text-xs font-mono text-gold-500 uppercase block mb-4">// OPERATIONAL ORBITS</span>
-                <ul class="space-y-2 font-serif text-xl">
-                    <li class="flex justify-between items-center">
-                        <span>PostgreSQL / MySQL</span>
-                        <span class="text-xs font-mono opacity-50">Relational DB</span>
-                    </li>
-                    <li class="flex justify-between items-center">
-                        <span>Docker Containers</span>
-                        <span class="text-xs font-mono opacity-50">Virtualization</span>
-                    </li>
-                    <li class="flex justify-between items-center">
-                        <span>Git & Deployment</span>
-                        <span class="text-xs font-mono opacity-50">Version Architecture</span>
-                    </li>
-                    <li class="flex justify-between items-center">
-                        <span>QGIS & Task Scheduler</span>
-                        <span class="text-xs font-mono opacity-50">Data Workflows</span>
-                    </li>
-                </ul>
-            </div>
-
-        </div>
-    </section>
-
-    <!-- Fifth Row: Achievements & Academics (Balanced layout) -->
-    <section class="py-12" id="credentials">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
-            
-            <!-- Left Column: Leadership & Awards -->
-            <div class="space-y-6">
-                <span class="text-xs font-mono tracking-wider text-gold-500 uppercase font-semibold block">VI. SPECIAL DECORATIONS</span>
-                <div class="space-y-6">
-                    <div class="border-l-2 border-gold-500 pl-4">
-                        <h4 class="font-serif text-2xl leading-tight">Team Leader — IEEE Xtreme 18.0 Global Hack</h4>
-                        <p class="text-xs font-mono opacity-50 mb-2">OCTOBER 2024</p>
-                        <p class="text-sm text-charcoal-900/70 dark:text-cream-100/70">
-                            Guided a 3-engineer collaborative structure in a grueling 24-hour global engineering contest. Evaluated and placed in the top tier: **Global Rank 250**, **India Rank 52**, and **1st place** across university brackets out of 8,793 teams.
-                        </p>
-                    </div>
-
-                    <div class="border-l-2 border-gold-500 pl-4">
-                        <h4 class="font-serif text-2xl leading-tight">Overall Coordinator — ALPHAMATICA-2026 Fest</h4>
-                        <p class="text-xs font-mono opacity-50 mb-2">MARCH 2026</p>
-                        <p class="text-sm text-charcoal-900/70 dark:text-cream-100/70">
-                            Supervised 12 independent logistics coordination boards to produce an inter-university computing festival. Obtained an honorary citation of leadership merit.
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Right Column: Academic Credentials -->
-            <div class="space-y-6">
-                <span class="text-xs font-mono tracking-wider text-gold-500 uppercase font-semibold block">VII. ACADEMIC CREDENTIALS</span>
-                <div class="border border-charcoal-900/10 dark:border-cream-100/10 p-6 bg-cream-50 dark:bg-charcoal-800 space-y-4">
-                    <div class="flex justify-between items-start">
-                        <div>
-                            <h4 class="font-serif text-2xl">B.Tech, Computer Science</h4>
-                            <p class="text-xs font-mono text-charcoal-900/60 dark:text-cream-100/60">Geethanjali College of Engineering &amp; Technology</p>
-                        </div>
-                        <span class="text-xs font-mono bg-gold-500 text-cream-50 px-2 py-0.5 font-bold">2023 - 2027</span>
-                    </div>
-                    <p class="text-xs text-charcoal-900/70 dark:text-cream-100/70">
-                        Rigorous training focusing on robust operating concepts, Database architectures, Algorithmic structures, and Computer Network dynamics. Maintains a cumulative evaluation GPA of **8.74 / 10**.
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                
+                <!-- Experience Item 01 -->
+                <div class="space-y-3">
+                    <span class="text-xs font-mono text-gold-500 block">01 / JAN 2026 – JUNE 2026</span>
+                    <h4 class="font-serif text-2xl tracking-tight">India Meteorological Department</h4>
+                    <p class="text-xs font-mono uppercase tracking-wider text-charcoal-900/60 dark:text-cream-100/60">Project Intern // GIS Systems</p>
+                    <p class="text-xs leading-relaxed text-charcoal-900/70 dark:text-cream-100/70 text-justify">
+                        Engineered automated meteorological GIS data pipeline. Decreased manual workload by 90% via structural scheduling algorithms generating 10+ daily maps. Designed low-latency, real-time dashboard from JSON logs, cutting system resolution cycle times by 60%.
                     </p>
                 </div>
+
+                <!-- Experience Item 02 -->
+                <div class="space-y-3">
+                    <span class="text-xs font-mono text-gold-500 block">02 / FEB 2026 – JUNE 2026</span>
+                    <h4 class="font-serif text-2xl tracking-tight">Nucleonix Systems Pvt. Ltd.</h4>
+                    <p class="text-xs font-mono uppercase tracking-wider text-charcoal-900/60 dark:text-cream-100/60">Software Engineer Intern</p>
+                    <p class="text-xs leading-relaxed text-charcoal-900/70 dark:text-cream-100/70 text-justify">
+                        Constructed React Native / Expo telemetry visualization client for robust tablets tracking radiation environments. Handled custom Bluetooth Low Energy (BLE) peripheral schemas, including device pairing, streaming, and telemetry state synchronizations.
+                    </p>
+                </div>
+
+                <!-- Experience Item 03 -->
+                <div class="space-y-3">
+                    <span class="text-xs font-mono text-gold-500 block">03 / APR 2026 – MAY 2026</span>
+                    <h4 class="font-serif text-2xl tracking-tight">RavNova</h4>
+                    <p class="text-xs font-mono uppercase tracking-wider text-charcoal-900/60 dark:text-cream-100/60">Web Scraping Intern</p>
+                    <p class="text-xs leading-relaxed text-charcoal-900/70 dark:text-cream-100/70 text-justify">
+                        Designed scale-oriented scraping structures using Python and Scrapy. Mitigated Cloudflare anti-bot firewalls, request rates, dynamic JavaScript UI obstacles via browser Dev Tools and robust logging workflows.
+                    </p>
+                </div>
+
+                <!-- Experience Item 04 -->
+                <div class="space-y-3">
+                    <span class="text-xs font-mono text-gold-500 block">04 / LEADERSHIP & TRUSTS</span>
+                    <h4 class="font-serif text-2xl tracking-tight">IEEE Xtreme 18.0 Global</h4>
+                    <p class="text-xs font-mono uppercase tracking-wider text-charcoal-900/60 dark:text-cream-100/60">Team Lead // coding challenge</p>
+                    <p class="text-xs leading-relaxed text-charcoal-900/70 dark:text-cream-100/70 text-justify">
+                        Led a 3-member team in a 24-hour global coding marathon among 8,793 teams; achieved Global Rank 250, India Rank 52, and 1st at university brackets.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Fourth Row: Skills Inventory (Visual grid reminiscent of old advertisements columns) -->
+        <section class="py-12 border-b border-charcoal-900/10 dark:border-cream-100/10" id="skills">
+            <div class="flex justify-between items-end border-b border-charcoal-900/10 dark:border-cream-100/10 pb-2 mb-8">
+                <span class="text-xs font-mono tracking-wider text-gold-500 uppercase font-semibold">VI. ARCHIVAL TOOLKIT</span>
+                <span class="text-xs font-mono text-charcoal-900/40 dark:text-cream-100/40">[LANGUAGES & SYSTEMS]</span>
             </div>
 
-        </div>
-    </section>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <!-- Category 1 -->
+                <div class="border border-charcoal-900/10 dark:border-cream-100/10 p-6 bg-cream-50 dark:bg-charcoal-800">
+                    <span class="text-xs font-mono text-gold-500 uppercase block mb-4">// CORE COMPILERS</span>
+                    <ul class="space-y-2 font-serif text-xl">
+                        <li class="flex justify-between items-center">
+                            <span>Java Standard</span>
+                            <span class="text-xs font-mono opacity-50">Core / OOP</span>
+                        </li>
+                        <li class="flex justify-between items-center">
+                            <span>Python 3.x</span>
+                            <span class="text-xs font-mono opacity-50">PyTorch / Scrapy</span>
+                        </li>
+                        <li class="flex justify-between items-center">
+                            <span>SQL Syntax</span>
+                            <span class="text-xs font-mono opacity-50">Complex Joins</span>
+                        </li>
+                        <li class="flex justify-between items-center">
+                            <span>C Programming</span>
+                            <span class="text-xs font-mono opacity-50">Procedural</span>
+                        </li>
+                    </ul>
+                </div>
 
-</main>
+                <!-- Category 2 -->
+                <div class="border border-charcoal-900/10 dark:border-cream-100/10 p-6 bg-cream-50 dark:bg-charcoal-800">
+                    <span class="text-xs font-mono text-gold-500 uppercase block mb-4">// FRAMEWORKS & PIPELINES</span>
+                    <ul class="space-y-2 font-serif text-xl">
+                        <li class="flex justify-between items-center">
+                            <span>React Native</span>
+                            <span class="text-xs font-mono opacity-50">Expo Ecosystem</span>
+                        </li>
+                        <li class="flex justify-between items-center">
+                            <span>FastAPI / Node</span>
+                            <span class="text-xs font-mono opacity-50">Asynchronous APIs</span>
+                        </li>
+                        <li class="flex justify-between items-center">
+                            <span>OpenCV & YOLOv8</span>
+                            <span class="text-xs font-mono opacity-50">Computer Vision</span>
+                        </li>
+                        <li class="flex justify-between items-center">
+                            <span>React.js</span>
+                            <span class="text-xs font-mono opacity-50">Single Page Apps</span>
+                        </li>
+                    </ul>
+                </div>
 
-<!-- Editorial Footer / Contact Box -->
+                <!-- Category 3 -->
+                <div class="border border-charcoal-900/10 dark:border-cream-100/10 p-6 bg-cream-50 dark:bg-charcoal-800">
+                    <span class="text-xs font-mono text-gold-500 uppercase block mb-4">// OPERATIONAL ORBITS</span>
+                    <ul class="space-y-2 font-serif text-xl">
+                        <li class="flex justify-between items-center">
+                            <span>PostgreSQL / MySQL</span>
+                            <span class="text-xs font-mono opacity-50">Relational DB</span>
+                        </li>
+                        <li class="flex justify-between items-center">
+                            <span>Docker Containers</span>
+                            <span class="text-xs font-mono opacity-50">Virtualization</span>
+                        </li>
+                        <li class="flex justify-between items-center">
+                            <span>Git & Deployment</span>
+                            <span class="text-xs font-mono opacity-50">Version Architecture</span>
+                        </li>
+                        <li class="flex justify-between items-center">
+                            <span>QGIS & Task Scheduler</span>
+                            <span class="text-xs font-mono opacity-50">Data Workflows</span>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Fifth Row: Achievements & Academics (Balanced layout) -->
+        <section class="py-12" id="credentials">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                
+                <!-- Left Column: Leadership & Awards -->
+                <div class="space-y-6">
+                    <span class="text-xs font-mono tracking-wider text-gold-500 uppercase font-semibold block">VII. SPECIAL DECORATIONS</span>
+                    <div class="space-y-6">
+                        <div class="border-l-2 border-gold-500 pl-4">
+                            <h4 class="font-serif text-2xl leading-tight">Team Leader — IEEE Xtreme 18.0 Global Hack</h4>
+                            <p class="text-xs font-mono opacity-50 mb-2">OCTOBER 2024</p>
+                            <p class="text-sm text-charcoal-900/70 dark:text-cream-100/70">
+                                Guided a 3-engineer collaborative structure in a grueling 24-hour global engineering contest. Evaluated and placed in the top tier: **Global Rank 250**, **India Rank 52**, and **1st place** across university brackets out of 8,793 teams.
+                            </p>
+                        </div>
+
+                        <div class="border-l-2 border-gold-500 pl-4">
+                            <h4 class="font-serif text-2xl leading-tight">Overall Coordinator — ALPHAMATICA-2026 Fest</h4>
+                            <p class="text-xs font-mono opacity-50 mb-2">MARCH 2026</p>
+                            <p class="text-sm text-charcoal-900/70 dark:text-cream-100/70">
+                                Supervised 12 independent logistics coordination boards to produce an inter-university computing festival. Obtained an honorary citation of leadership merit.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column: Academic Credentials -->
+                <div class="space-y-6">
+                    <span class="text-xs font-mono tracking-wider text-gold-500 uppercase font-semibold block">VIII. ACADEMIC CREDENTIALS</span>
+                    <div class="border border-charcoal-900/10 dark:border-cream-100/10 p-6 bg-cream-50 dark:bg-charcoal-800 space-y-4">
+                        <div class="flex justify-between items-start">
+                            <div>
+                                <h4 class="font-serif text-2xl">B.Tech, Computer Science and Engineering</h4>
+                                <p class="text-xs font-mono text-charcoal-900/60 dark:text-cream-100/60">Geethanjali College of Engineering &amp; Technology</p>
+                            </div>
+                            <span class="text-xs font-mono bg-gold-500 text-cream-50 px-2 py-0.5 font-bold">2023 - 2027</span>
+                        </div>
+                        <p class="text-xs text-charcoal-900/70 dark:text-cream-100/70">
+                            Rigorous training focusing on robust operating concepts, Database architectures, Algorithmic structures, and Computer Network dynamics. Maintains a cumulative evaluation GPA of **8.74 / 10**.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Editorial Footer / Contact Box -->
     <footer class="border-t-4 border-charcoal-900 dark:border-cream-100 bg-cream-100 dark:bg-charcoal-900 px-4 md:px-12 py-12">
         <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 items-start">
             
@@ -636,7 +899,7 @@
                 <span class="text-gold-500 font-bold block">// PRIMARY COORDINATES</span>
                 <p class="flex items-center gap-2">
                     <svg class="w-3.5 h-3.5 text-gold-500 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"></rect><polyline points="2 7 12 13 22 7"></polyline></svg>
-                    <a href="mailto:qasaisreeharsha2005@gmail.com" class="hover:underline hover:text-gold-500">qasaisreeharsha2005@gmail.com</a>
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=qasaisreeharsha2005@gmail.com" target="_blank" rel="noopener noreferrer" class="hover:underline hover:text-gold-500">qasaisreeharsha2005@gmail.com</a>
                 </p>
                 <p class="flex items-center gap-2">
                     <svg class="w-3.5 h-3.5 text-gold-500 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
