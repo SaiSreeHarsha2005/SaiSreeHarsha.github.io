@@ -5,12 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Minnekanti Sai Sree Harsha - Portfolio</title>
     
+    <!-- Favicon using SVG Initials -->
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2280%22 font-family=%22DM Serif Display, serif%22 fill=%22%23C5A880%22>M</text></svg>">
 
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=DM+Serif+Display:ital@0;1&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
 
+    <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     
     <script>
@@ -117,8 +120,10 @@
 
 <body class="bg-cream-100 text-charcoal-900 dark:bg-charcoal-900 dark:text-cream-100 font-sans transition-colors duration-500 selection:bg-gold-500 selection:text-cream-50">
 
+    <!-- Focus Dimming Backdrop Layer -->
     <div id="focus-dimmer" class="fixed inset-0 bg-charcoal-900/60 backdrop-blur-[2px] opacity-0 pointer-events-none transition-opacity duration-500 z-30"></div>
 
+    <!-- Reading Progress Tracker -->
     <div class="fixed top-0 left-0 w-full h-[3px] bg-charcoal-900/5 dark:bg-cream-100/5 z-50 no-print">
         <div id="reading-progress" class="h-full bg-gold-500 transition-[width] duration-150 ease-out" style="width: 0%"></div>
     </div>
@@ -126,6 +131,7 @@
     <header class="border-b border-charcoal-900/10 dark:border-cream-100/10 px-4 md:px-12 py-6">
         <div class="max-w-7xl mx-auto">
             
+            <!-- Live Status & Document Actions Bar -->
             <div class="flex justify-between items-center text-xs font-mono tracking-widest uppercase mb-8 no-print">
                 <div class="flex items-center gap-4">
                     <span class="flex items-center gap-1.5">
@@ -153,8 +159,9 @@
                 </div>
             </div>
 
+            <!-- Main Title Header -->
             <div class="text-center py-4 border-y-4 border-charcoal-900 dark:border-cream-100 relative">
-                <p class="text-xs font-mono tracking-[0.25em] uppercase mb-2">Portfolio Chronicles &bull; AI Engineering & System Design</p>
+                <p class="text-xs font-mono tracking-[0.25em] uppercase mb-2">Portfolio Chronicles &bull; AI Engineering & GIS Automation</p>
                 <h1 class="font-serif text-5xl md:text-8xl lg:text-9xl tracking-tighter uppercase leading-none select-none">
                     The Dispatch
                 </h1>
@@ -163,6 +170,7 @@
                 </div>
             </div>
 
+            <!-- Student Statistics Bar -->
             <div class="grid grid-cols-2 md:grid-cols-4 gap-4 py-3.5 text-xs font-mono text-center border-b border-charcoal-900/10 dark:border-cream-100/10 text-charcoal-900/70 dark:text-cream-100/70">
                 <div class="md:text-left">COGNITION: B.TECH CSE (2023 - 2027)</div>
                 <div class="hidden md:block">ACADEMICS: CGPA 8.74 / 10</div>
@@ -173,15 +181,13 @@
             <div class="overflow-hidden border-b border-charcoal-900/10 dark:border-cream-100/10 py-2 no-print">
                 <div class="flex items-center gap-4 whitespace-nowrap animate-[ticker_24s_linear_infinite] text-[11px] font-mono uppercase tracking-widest text-charcoal-900/60 dark:text-cream-100/60">
                     <span class="text-gold-500 font-bold">// WIRE TRANSMISSION:</span>
-                    <span>AI Engineering & Multi-Agent Architecture</span>
+                    <span>PyQGIS &amp; Spatial Automation Engineering</span>
                     <span class="text-gold-500">&bull;</span>
-                    <span>RAG Pipelines & Vector Search Integration</span>
-                    <span class="text-gold-500">&bull;</span>
-                    <span>Preparing for AWS Certified AI Practitioner</span>
+                    <span>Multimodal AI &amp; Gemini 2.0 Agentic Workflows</span>
                     <span class="text-gold-500">&bull;</span>
                     <span>Global Rank 250 IEEE Xtreme 18.0</span>
                     <span class="text-gold-500">&bull;</span>
-                    <span>Full-Stack Development & IoT Telemetry</span>
+                    <span>Full-Stack Development &amp; Real-Time Telemetry</span>
                 </div>
             </div>
         </div>
@@ -190,9 +196,11 @@
     <main class="max-w-7xl mx-auto px-4 md:px-12 py-8">
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 border-b border-charcoal-900/10 dark:border-cream-100/10 pb-12">
             
+            <!-- LEFT EDITORIAL PANEL -->
             <div class="lg:col-span-5 lg:border-r lg:border-charcoal-900/10 dark:lg:border-cream-100/10 lg:pr-8 flex flex-col justify-between space-y-8">
                 <div class="space-y-6">
                     
+                    <!-- Profile Card -->
                     <div class="flex flex-col sm:flex-row items-start gap-6">
                         <div class="contributor-photo shrink-0 bg-white dark:bg-cream-50 p-2.5 pb-3 shadow-xl border border-charcoal-900/10 mx-auto sm:mx-0">
                             <img src="image.jpeg" alt="Minnekanti Sai Sree Harsha" class="w-32 h-32 md:w-36 md:h-36 object-cover grayscale-[15%] rounded-sm" onerror="this.onerror=null; this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'160\' height=\'160\'%3E%3Crect width=\'160\' height=\'160\' fill=\'%23232323\'/%3E%3Ctext x=\'50%25\' y=\'54%25\' font-family=\'DM Serif Display, serif\' font-size=\'58\' fill=\'%23C5A880\' text-anchor=\'middle\' dominant-baseline=\'middle\'%3EMS%3C/text%3E%3C/svg%3E';">
@@ -200,11 +208,12 @@
                         <div class="space-y-3 pt-1 text-center sm:text-left flex-1">
                             <span class="text-xs font-mono tracking-wider text-gold-500 uppercase block font-semibold">I. HEAD EDITOR DECK</span>
                             <h2 class="font-serif text-3xl md:text-4xl leading-[1.15] tracking-tight text-charcoal-900 dark:text-cream-50">
-                                Engineering intelligent agentic systems, generative models, and scalable architectures.
+                                Engineering spatial automation pipelines, multimodal AI agents, and robust full-stack platforms.
                             </h2>
                         </div>
                     </div>
 
+                    <!-- AI ENGINEER TARGET & FOCUS DASHBOARD -->
                     <div class="p-4 bg-cream-50 dark:bg-charcoal-800 border border-charcoal-900/10 dark:border-cream-100/10 rounded-xl space-y-3 font-mono text-xs">
                         <div class="flex justify-between items-center border-b border-charcoal-900/10 dark:border-cream-100/10 pb-2">
                             <span class="text-gold-500 font-bold uppercase">// CURRENT FOCUS</span>
@@ -221,11 +230,11 @@
                     </div>
                     
                     <blockquote class="border-l-2 border-gold-500 pl-4 font-serif text-lg md:text-xl italic text-charcoal-900/80 dark:text-cream-100/80">
-                        "I design system architectures that combine multi-agent intelligence with deterministic full-stack performance and real-time execution."
+                        "I focus on replacing slow manual workflows with continuous autonomous pipelines—ranging from automated spatial interpolation to multimodal AI educational agents."
                     </blockquote>
                     
                     <p class="text-sm leading-relaxed text-charcoal-900/70 dark:text-cream-100/70 text-justify">
-                        Completing my B.Tech in Computer Science and Engineering at Geethanjali College of Engineering and Technology (GPA: 8.74). Experienced in engineering autonomous AI workflows, spatial automation pipelines, and IoT hardware integration during tenures at IMD and Nucleonix Systems.
+                        Currently pursuing my B.Tech in Computer Science and Engineering at Geethanjali College of Engineering and Technology (GPA: 8.74). Actively executing spatial processing pipelines for weather telemetry at the India Meteorological Department and developing autonomous AI platforms.
                     </p>
 
                     <div class="pt-2 flex flex-col sm:flex-row gap-4">
@@ -267,7 +276,7 @@
                     <span class="text-[10px] font-mono uppercase tracking-[0.2em] block mb-3 text-charcoal-900/40 dark:text-cream-100/40">THE CHRONICLE MAP</span>
                     <nav class="space-y-1.5 font-serif text-lg">
                         <a href="#projects" class="flex justify-between items-center py-1 border-b border-transparent hover:border-gold-500 transition-all">
-                            <span>01 / Systems &amp; AI Architectures</span>
+                            <span>01 / Flagship Systems &amp; Blueprints</span>
                             <span class="text-xs font-mono text-gold-500">&rarr;</span>
                         </a>
                         <a href="#experience" class="flex justify-between items-center py-1 border-b border-transparent hover:border-gold-500 transition-all">
@@ -275,7 +284,7 @@
                             <span class="text-xs font-mono text-gold-500">&rarr;</span>
                         </a>
                         <a href="#skills" class="flex justify-between items-center py-1 border-b border-transparent hover:border-gold-500 transition-all">
-                            <span>03 / Core Capabilities</span>
+                            <span>03 / Technical Capability Matrix</span>
                             <span class="text-xs font-mono text-gold-500">&rarr;</span>
                         </a>
                         <a href="#certifications" class="flex justify-between items-center py-1 border-b border-transparent hover:border-gold-500 transition-all">
@@ -286,6 +295,7 @@
                 </div>
             </div>
 
+            <!-- RIGHT EDITORIAL PANEL: Projects & AI Systems -->
             <div class="lg:col-span-7 space-y-12" id="projects">
                 <div>
                     <div class="flex justify-between items-end border-b border-charcoal-900/10 dark:border-cream-100/10 pb-2 mb-6">
@@ -295,19 +305,23 @@
 
                     <div class="space-y-8">
                         
-                        <article class="article-focus bg-cream-50 dark:bg-charcoal-800 border border-charcoal-900/10 dark:border-cream-100/10 p-6 flex flex-col justify-between cursor-pointer rounded-xl" onclick="toggleFocus(this)">
+                        <!-- Case 1: Automated Spatial Processing & Thematic Map Generation (FLAGSHIP MAJOR PROJECT) -->
+                        <article class="article-focus bg-cream-50 dark:bg-charcoal-800 border-2 border-gold-500/40 dark:border-gold-500/30 p-6 flex flex-col justify-between cursor-pointer rounded-xl relative shadow-md" onclick="toggleFocus(this)">
                             <div>
                                 <div class="flex justify-between items-start mb-4 border-b border-charcoal-900/10 dark:border-cream-100/10 pb-3">
                                     <div>
-                                        <span class="text-[10px] font-mono text-gold-500 uppercase block font-bold">[ENGINEERING DESIGN 01]</span>
+                                        <div class="flex items-center gap-2 mb-1">
+                                            <span class="text-[10px] font-mono text-gold-500 uppercase font-bold">[ENGINEERING DESIGN 01 &bull; FLAGSHIP PROJECT]</span>
+                                            <span class="px-2 py-0.5 text-[9px] font-mono bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 rounded uppercase font-bold">90 Min &rarr; 45 Sec</span>
+                                        </div>
                                         <h3 class="font-serif text-2xl lg:text-3xl text-charcoal-900 dark:text-cream-100">
-                                            AI-Powered Defense Communication &amp; Incident Response System
+                                            Automated Spatial Data Processing &amp; Thematic Map Generation
                                         </h3>
                                         <p class="text-[11px] font-mono text-charcoal-900/50 dark:text-cream-100/50 uppercase mt-1">
-                                            Real-time Surveillance, Incident Detection, and Agentic Voice Analytics
+                                            Headless PyQGIS, GDAL Interpolation &amp; Continuous Background Daemon
                                         </p>
                                     </div>
-                                    <span class="text-xs font-mono shrink-0 text-gold-500 bg-gold-500/10 px-2.5 py-1 rounded">2026</span>
+                                    <span class="text-xs font-mono shrink-0 text-gold-500 bg-gold-500/10 px-2.5 py-1 rounded font-bold">2026</span>
                                 </div>
 
                                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-xs mt-4">
@@ -318,16 +332,16 @@
                                                 Problem Case
                                             </h4>
                                             <p class="text-charcoal-900/70 dark:text-cream-100/70 leading-relaxed text-justify mt-1">
-                                                Surveillance architectures fail to translate visual object threats into actionable voice alerts instantly.
+                                                Manual GIS cartography required meteorologists to manually clean tabular weather telemetry, reconcile district spelling discrepancies, and style maps individually—causing severe bottlenecking during critical forecast releases.
                                             </p>
                                         </div>
                                         <div>
                                             <h4 class="font-mono font-bold text-emerald-600 dark:text-emerald-400 flex items-center gap-1.5 uppercase">
                                                 <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                                                Solution Strategy
+                                                Solution Architecture
                                             </h4>
                                             <p class="text-charcoal-900/70 dark:text-cream-100/70 leading-relaxed text-justify mt-1">
-                                                Created a unified FastAPI application loading YOLOv8 detection feeds. Combined Whisper Speech-to-Text and Llama 3.3 pipeline to parse verbal commands into structured automated alerts.
+                                                Built an autonomous backend pipeline using headless PyQGIS &amp; GDAL. Integrated intelligent coordinate boundary validation, dynamic string-matching for district shapefiles, IDW rainfall interpolation, continuous daemon scheduling with Telegram/Email crash recovery alerts, and a web monitoring dashboard.
                                             </p>
                                         </div>
                                     </div>
@@ -336,18 +350,18 @@
                                         <div>
                                             <h4 class="font-mono font-bold text-charcoal-900/40 dark:text-cream-100/40 flex items-center gap-1.5 uppercase">
                                                 <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="18" cy="5" r="3"></circle><circle cx="6" cy="12" r="3"></circle><circle cx="18" cy="19" r="3"></circle><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line></svg>
-                                                System Flow
+                                                Autonomous Pipeline Flow
                                             </h4>
                                             <div class="mt-1.5 p-3 bg-cream-100 dark:bg-charcoal-900 border border-charcoal-900/10 dark:border-cream-100/10 rounded-lg space-y-1 font-mono text-[10px]">
                                                 <div class="flex justify-between items-center bg-gold-500/10 p-1 rounded">
-                                                    <span class="text-gold-600 dark:text-gold-400 font-bold">[YOLOv8 Stream]</span>
+                                                    <span class="text-gold-600 dark:text-gold-400 font-bold">[CSV Gateway Ingestion]</span>
                                                     <span>&rarr;</span>
-                                                    <span class="font-bold">[FastAPI Backend]</span>
+                                                    <span class="font-bold">[PyQGIS Spatial Join]</span>
                                                 </div>
                                                 <div class="flex justify-between items-center bg-charcoal-900/5 dark:bg-cream-100/5 p-1 rounded">
-                                                    <span class="text-red-500 font-bold">[Whisper STT]</span>
+                                                    <span class="text-red-500 font-bold">[GDAL IDW Interpolation]</span>
                                                     <span>&rarr;</span>
-                                                    <span class="text-emerald-500 font-bold">[Llama Structuring]</span>
+                                                    <span class="text-emerald-500 font-bold">[29 A4 Vector Map Products]</span>
                                                 </div>
                                             </div>
                                         </div>
@@ -357,24 +371,26 @@
 
                             <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center mt-5 pt-4 border-t border-dashed border-charcoal-900/20 dark:border-cream-100/20 gap-3">
                                 <div class="flex flex-wrap gap-1.5">
-                                    <span class="px-2 py-0.5 bg-charcoal-900/5 dark:bg-cream-100/5 text-[10px] font-mono">React.js</span>
-                                    <span class="px-2 py-0.5 bg-charcoal-900/5 dark:bg-cream-100/5 text-[10px] font-mono">FastAPI</span>
-                                    <span class="px-2 py-0.5 bg-charcoal-900/5 dark:bg-cream-100/5 text-[10px] font-mono">YOLOv8</span>
-                                    <span class="px-2 py-0.5 bg-charcoal-900/5 dark:bg-cream-100/5 text-[10px] font-mono">Llama 3.3</span>
+                                    <span class="px-2 py-0.5 bg-charcoal-900/5 dark:bg-cream-100/5 text-[10px] font-mono">Python 3.x</span>
+                                    <span class="px-2 py-0.5 bg-charcoal-900/5 dark:bg-cream-100/5 text-[10px] font-mono">PyQGIS</span>
+                                    <span class="px-2 py-0.5 bg-charcoal-900/5 dark:bg-cream-100/5 text-[10px] font-mono">GDAL</span>
+                                    <span class="px-2 py-0.5 bg-charcoal-900/5 dark:bg-cream-100/5 text-[10px] font-mono">IDW Interpolation</span>
+                                    <span class="px-2 py-0.5 bg-charcoal-900/5 dark:bg-cream-100/5 text-[10px] font-mono">Daemon Services</span>
                                 </div>
                             </div>
                         </article>
 
+                        <!-- Case 2: GyanGuru AI Learning Assistant -->
                         <article class="article-focus bg-cream-50 dark:bg-charcoal-800 border border-charcoal-900/10 dark:border-cream-100/10 p-6 flex flex-col justify-between cursor-pointer rounded-xl" onclick="toggleFocus(this)">
                             <div>
                                 <div class="flex justify-between items-start mb-4 border-b border-charcoal-900/10 dark:border-cream-100/10 pb-3">
                                     <div>
                                         <span class="text-[10px] font-mono text-gold-500 uppercase block font-bold">[ENGINEERING DESIGN 02]</span>
                                         <h3 class="font-serif text-2xl lg:text-3xl text-charcoal-900 dark:text-cream-100">
-                                            OncoVision AI Diagnostics System
+                                            GyanGuru: AI-Powered Learning Assistant for AI &amp; ML
                                         </h3>
                                         <p class="text-[11px] font-mono text-charcoal-900/50 dark:text-cream-100/50 uppercase mt-1">
-                                            Deep Learning Histopathology Processing &amp; Classification Pipeline
+                                            Multimodal Educational Platform with Gemini 2.0 Flash &amp; AST Analysis
                                         </p>
                                     </div>
                                     <span class="text-xs font-mono shrink-0 text-gold-500 bg-gold-500/10 px-2.5 py-1 rounded">2026</span>
@@ -385,19 +401,19 @@
                                         <div>
                                             <h4 class="font-mono font-bold text-gold-500 flex items-center gap-1.5 uppercase">
                                                 <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
-                                                Research Scope
+                                                Problem Space
                                             </h4>
                                             <p class="text-charcoal-900/70 dark:text-cream-100/70 leading-relaxed text-justify mt-1">
-                                                Accurately mapping and diagnosing cancer boundaries from raw biopsy cell imagery datasets manually is slow and prone to subjective variations.
+                                                Complex AI and Machine Learning curricula lack unified, multi-sensory educational platforms combining LaTeX math formulations, automated code dependency parsing, and synchronized voice narration.
                                             </p>
                                         </div>
                                         <div>
                                             <h4 class="font-mono font-bold text-emerald-600 dark:text-emerald-400 flex items-center gap-1.5 uppercase">
                                                 <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                                                Scientific Approach
+                                                Platform Features
                                             </h4>
                                             <p class="text-charcoal-900/70 dark:text-cream-100/70 leading-relaxed text-justify mt-1">
-                                                Deployed custom ResNet/CNN architectures trained on PyTorch, with a Streamlit interface tracking feature importance through Grad-CAM localization heatmaps.
+                                                Engineered a Flask backend leveraging Gemini 2.0 Flash for structured Markdown &amp; LaTeX rendering, Python AST dependency parsing for instant PyPI package extraction, gTTS podcast-style narration, dynamic SVG flowcharts, and local offline template fallbacks.
                                             </p>
                                         </div>
                                     </div>
@@ -406,11 +422,11 @@
                                         <div>
                                             <h4 class="font-mono font-bold text-charcoal-900/40 dark:text-cream-100/40 flex items-center gap-1.5 uppercase">
                                                 <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="18" cy="5" r="3"></circle><circle cx="6" cy="12" r="3"></circle><circle cx="18" cy="19" r="3"></circle><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line></svg>
-                                                Analysis Chain
+                                                Modality Architecture
                                             </h4>
                                             <div class="mt-1.5 p-3 bg-cream-100 dark:bg-charcoal-900 border border-charcoal-900/10 dark:border-cream-100/10 rounded-lg space-y-1 font-mono text-[10px]">
                                                 <div class="bg-gold-500/10 p-1.5 rounded font-bold text-center">
-                                                    Biopsy Cell Frame &rarr; PyTorch CNN &rarr; Grad-CAM Focus Map
+                                                    Prompt Query &rarr; Gemini 2.0 Flash &rarr; AST Package Detection &rarr; gTTS Audio + SVG Visualizer
                                                 </div>
                                             </div>
                                         </div>
@@ -420,47 +436,50 @@
 
                             <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center mt-5 pt-4 border-t border-dashed border-charcoal-900/20 dark:border-cream-100/20 gap-3">
                                 <div class="flex flex-wrap gap-1.5">
-                                    <span class="px-2 py-0.5 bg-charcoal-900/5 dark:bg-cream-100/5 text-[10px] font-mono">Python</span>
-                                    <span class="px-2 py-0.5 bg-charcoal-900/5 dark:bg-cream-100/5 text-[10px] font-mono">PyTorch</span>
-                                    <span class="px-2 py-0.5 bg-charcoal-900/5 dark:bg-cream-100/5 text-[10px] font-mono">OpenCV</span>
-                                    <span class="px-2 py-0.5 bg-charcoal-900/5 dark:bg-cream-100/5 text-[10px] font-mono">Streamlit</span>
+                                    <span class="px-2 py-0.5 bg-charcoal-900/5 dark:bg-cream-100/5 text-[10px] font-mono">Python 3.11</span>
+                                    <span class="px-2 py-0.5 bg-charcoal-900/5 dark:bg-cream-100/5 text-[10px] font-mono">Flask</span>
+                                    <span class="px-2 py-0.5 bg-charcoal-900/5 dark:bg-cream-100/5 text-[10px] font-mono">Gemini 2.0 Flash</span>
+                                    <span class="px-2 py-0.5 bg-charcoal-900/5 dark:bg-cream-100/5 text-[10px] font-mono">gTTS</span>
+                                    <span class="px-2 py-0.5 bg-charcoal-900/5 dark:bg-cream-100/5 text-[10px] font-mono">AST Parser</span>
                                 </div>
+                                <a href="https://github.com/SaiSreeHarsha2005/GyanGuru" target="_blank" rel="noopener noreferrer" class="text-xs font-mono font-bold hover:text-gold-500 flex items-center gap-1.5 shrink-0 border border-charcoal-900/20 dark:border-cream-100/20 px-3 py-1.5 rounded-lg bg-cream-100 dark:bg-charcoal-900">
+                                    <span>GyanGuru Repository</span> &rarr;
+                                </a>
                             </div>
                         </article>
 
+                        <!-- Case 3: AI Defense System -->
                         <article class="article-focus bg-cream-50 dark:bg-charcoal-800 border border-charcoal-900/10 dark:border-cream-100/10 p-6 flex flex-col justify-between cursor-pointer rounded-xl" onclick="toggleFocus(this)">
                             <div>
                                 <div class="flex justify-between items-start mb-4 border-b border-charcoal-900/10 dark:border-cream-100/10 pb-3">
                                     <div>
                                         <span class="text-[10px] font-mono text-gold-500 uppercase block font-bold">[ENGINEERING DESIGN 03]</span>
                                         <h3 class="font-serif text-2xl lg:text-3xl text-charcoal-900 dark:text-cream-100">
-                                            JobMatch Job Portal Web Application
+                                            AI Defense Communication &amp; Incident System
                                         </h3>
                                         <p class="text-[11px] font-mono text-charcoal-900/50 dark:text-cream-100/50 uppercase mt-1">
-                                            Full-Stack Application with Multi-Tier User Role Management
+                                            Surveillance Analytics &amp; Voice Intelligence
                                         </p>
                                     </div>
-                                    <span class="text-xs font-mono shrink-0 text-gold-500 bg-gold-500/10 px-2.5 py-1 rounded">2025</span>
+                                    <span class="text-xs font-mono shrink-0 text-gold-500 bg-gold-500/10 px-2.5 py-1 rounded">2026</span>
                                 </div>
 
                                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-xs mt-4">
                                     <div class="space-y-4">
                                         <div>
                                             <h4 class="font-mono font-bold text-gold-500 flex items-center gap-1.5 uppercase">
-                                                <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
-                                                Problem Space
+                                                Problem Case
                                             </h4>
                                             <p class="text-charcoal-900/70 dark:text-cream-100/70 leading-relaxed text-justify mt-1">
-                                                Job search systems require safe, isolated operational portals for job seekers and hiring entities simultaneously without dynamic route latency.
+                                                Translating live surveillance feeds into immediate structured voice dispatch alerts without latency.
                                             </p>
                                         </div>
                                         <div>
                                             <h4 class="font-mono font-bold text-emerald-600 dark:text-emerald-400 flex items-center gap-1.5 uppercase">
-                                                <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                                                Execution
+                                                Solution Strategy
                                             </h4>
                                             <p class="text-charcoal-900/70 dark:text-cream-100/70 leading-relaxed text-justify mt-1">
-                                                Assembled relational MySQL tables paired with PHP backend logic. Handled dynamic routing states to validate credential sessions securely.
+                                                Combined YOLOv8 target identification feeds with Whisper Speech-to-Text and Llama 3.3 to auto-generate incident dispatches over FastAPI.
                                             </p>
                                         </div>
                                     </div>
@@ -468,17 +487,10 @@
                                     <div class="space-y-4">
                                         <div>
                                             <h4 class="font-mono font-bold text-charcoal-900/40 dark:text-cream-100/40 flex items-center gap-1.5 uppercase">
-                                                <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="18" cy="5" r="3"></circle><circle cx="6" cy="12" r="3"></circle><circle cx="18" cy="19" r="3"></circle><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line></svg>
-                                                Routing Schema
+                                                Flow Schema
                                             </h4>
-                                            <div class="mt-1.5 p-3 bg-cream-100 dark:bg-charcoal-900 border border-charcoal-900/10 dark:border-cream-100/10 rounded-lg space-y-1 font-mono text-[10px]">
-                                                <div class="flex justify-between items-center bg-gold-500/10 p-1 rounded">
-                                                    <span>[Public Request]</span>
-                                                    <span>&rarr;</span>
-                                                    <span>[PHP Validator]</span>
-                                                    <span>&rarr;</span>
-                                                    <span class="text-emerald-500 font-bold">[Dashboard]</span>
-                                                </div>
+                                            <div class="mt-1.5 p-3 bg-cream-100 dark:bg-charcoal-900 border border-charcoal-900/10 dark:border-cream-100/10 rounded-lg font-mono text-[10px] text-center bg-gold-500/10 font-bold">
+                                                YOLOv8 Video Stream &rarr; FastAPI &rarr; Whisper STT &rarr; Llama Dispatch Alert
                                             </div>
                                         </div>
                                     </div>
@@ -487,13 +499,11 @@
 
                             <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center mt-5 pt-4 border-t border-dashed border-charcoal-900/20 dark:border-cream-100/20 gap-3">
                                 <div class="flex flex-wrap gap-1.5">
-                                    <span class="px-2 py-0.5 bg-charcoal-900/5 dark:bg-cream-100/5 text-[10px] font-mono">PHP</span>
-                                    <span class="px-2 py-0.5 bg-charcoal-900/5 dark:bg-cream-100/5 text-[10px] font-mono">MySQL</span>
-                                    <span class="px-2 py-0.5 bg-charcoal-900/5 dark:bg-cream-100/5 text-[10px] font-mono">JavaScript</span>
+                                    <span class="px-2 py-0.5 bg-charcoal-900/5 dark:bg-cream-100/5 text-[10px] font-mono">FastAPI</span>
+                                    <span class="px-2 py-0.5 bg-charcoal-900/5 dark:bg-cream-100/5 text-[10px] font-mono">YOLOv8</span>
+                                    <span class="px-2 py-0.5 bg-charcoal-900/5 dark:bg-cream-100/5 text-[10px] font-mono">Whisper AI</span>
+                                    <span class="px-2 py-0.5 bg-charcoal-900/5 dark:bg-cream-100/5 text-[10px] font-mono">Llama 3.3</span>
                                 </div>
-                                <a href="https://github.com/SaiSreeHarsha2005/JobMatch" target="_blank" rel="noopener noreferrer" class="text-xs font-mono font-bold hover:text-gold-500 flex items-center gap-1.5 shrink-0 border border-charcoal-900/20 dark:border-cream-100/20 px-3 py-1.5 rounded-lg bg-cream-100 dark:bg-charcoal-900">
-                                    <span>Code Repository</span> &rarr;
-                                </a>
                             </div>
                         </article>
 
@@ -510,15 +520,17 @@
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                 
+                <!-- Tenures 01: IMD (PRESENT TIMELINE) -->
                 <div class="space-y-3">
-                    <span class="text-xs font-mono text-gold-500 block font-semibold">01 / JAN 2026 – JUNE 2026</span>
+                    <span class="text-xs font-mono text-gold-500 block font-semibold">01 / JAN 2026 – PRESENT</span>
                     <h4 class="font-serif text-2xl tracking-tight leading-tight">India Meteorological Department</h4>
                     <p class="text-xs font-mono uppercase tracking-wider text-charcoal-900/50 dark:text-cream-100/50">GIS Systems &bull; Project Intern</p>
                     <p class="text-xs leading-relaxed text-charcoal-900/70 dark:text-cream-100/70 text-justify">
-                        Architected automated GIS processing pipelines decreasing map preparation time by 90%. Created structured JSON dashboard pipelines capturing historical trends, speeding up resolution tracking.
+                        Architecting automated spatial processing pipelines decreasing thematic map generation times by over 90%. Building robust PyQGIS background daemons and quality check gateways for daily weather forecasts.
                     </p>
                 </div>
 
+                <!-- Tenures 02: Nucleonix Systems -->
                 <div class="space-y-3">
                     <span class="text-xs font-mono text-gold-500 block font-semibold">02 / FEB 2026 – JUNE 2026</span>
                     <h4 class="font-serif text-2xl tracking-tight leading-tight">Nucleonix Systems Pvt. Ltd.</h4>
@@ -528,6 +540,7 @@
                     </p>
                 </div>
 
+                <!-- Tenures 03: Supraja Technologies -->
                 <div class="space-y-3">
                     <span class="text-xs font-mono text-gold-500 block font-semibold">03 / JUNE 2024 – JULY 2024</span>
                     <h4 class="font-serif text-2xl tracking-tight leading-tight">Supraja Technologies</h4>
@@ -537,6 +550,7 @@
                     </p>
                 </div>
 
+                <!-- Tenures 04: RavNova -->
                 <div class="space-y-3">
                     <span class="text-xs font-mono text-gold-500 block font-semibold">04 / APR 2026 – MAY 2026</span>
                     <h4 class="font-serif text-2xl tracking-tight leading-tight">RavNova</h4>
@@ -549,89 +563,110 @@
             </div>
         </section>
 
+        <!-- TECHNICAL CAPABILITY MATRIX (REORGANIZED TO MATCH USER GRID BREAKDOWN EXACTLY) -->
         <section class="py-12 border-b border-charcoal-900/10 dark:border-cream-100/10" id="skills">
             <div class="flex justify-between items-end border-b border-charcoal-900/10 dark:border-cream-100/10 pb-2 mb-8">
-                <span class="text-xs font-mono tracking-wider text-gold-500 uppercase font-bold">IV. TECHNICAL CAPABILITY ARRAYS</span>
-                <span class="text-xs font-mono text-charcoal-900/40 dark:text-cream-100/40">[STACK TAXONOMY]</span>
+                <span class="text-xs font-mono tracking-wider text-gold-500 uppercase font-bold">IV. TECHNICAL CAPABILITY MATRIX</span>
+                <span class="text-xs font-mono text-charcoal-900/40 dark:text-cream-100/40">[GRID TAXONOMY]</span>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 
-                <div class="border border-charcoal-900/10 dark:border-cream-100/10 p-6 bg-cream-50 dark:bg-charcoal-800 rounded-xl flex flex-col justify-between">
-                    <div>
-                        <span class="text-xs font-mono text-gold-500 uppercase block mb-4">// AI, LLM &amp; AGENTIC SYSTEMS</span>
-                        <ul class="space-y-3 font-serif text-lg">
-                            <li class="flex justify-between items-center border-b border-charcoal-900/5 dark:border-cream-100/5 pb-1.5">
-                                <span>Agentic AI &amp; Tool-Calling</span>
-                                <span class="text-[10px] font-mono opacity-60">ReAct / Multi-Agent</span>
-                            </li>
-                            <li class="flex justify-between items-center border-b border-charcoal-900/5 dark:border-cream-100/5 pb-1.5">
-                                <span>RAG &amp; Vector Databases</span>
-                                <span class="text-[10px] font-mono opacity-60">Embeddings / Chunking</span>
-                            </li>
-                            <li class="flex justify-between items-center border-b border-charcoal-900/5 dark:border-cream-100/5 pb-1.5">
-                                <span>Deep Learning Networks</span>
-                                <span class="text-[10px] font-mono opacity-60">CNN / Transformers</span>
-                            </li>
-                            <li class="flex justify-between items-center">
-                                <span>Prompt Engineering</span>
-                                <span class="text-[10px] font-mono opacity-60">Few-Shot / Guardrails</span>
-                            </li>
-                        </ul>
+                <!-- Card 1: Programming Languages -->
+                <div class="border border-charcoal-900/10 dark:border-cream-100/10 p-5 bg-cream-50 dark:bg-charcoal-800 rounded-xl space-y-3">
+                    <div class="flex items-center gap-2 border-b border-charcoal-900/10 dark:border-cream-100/10 pb-2">
+                        <svg class="w-4 h-4 text-gold-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+                        <h5 class="font-mono text-xs font-bold uppercase tracking-wider">PROGRAMMING LANGUAGES</h5>
+                    </div>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-2.5 py-1 bg-cream-100 dark:bg-charcoal-900 border border-charcoal-900/10 dark:border-cream-100/10 text-xs font-mono rounded">Python</span>
+                        <span class="px-2.5 py-1 bg-cream-100 dark:bg-charcoal-900 border border-charcoal-900/10 dark:border-cream-100/10 text-xs font-mono rounded">Java</span>
+                        <span class="px-2.5 py-1 bg-cream-100 dark:bg-charcoal-900 border border-charcoal-900/10 dark:border-cream-100/10 text-xs font-mono rounded">SQL</span>
+                        <span class="px-2.5 py-1 bg-cream-100 dark:bg-charcoal-900 border border-charcoal-900/10 dark:border-cream-100/10 text-xs font-mono rounded">C</span>
+                        <span class="px-2.5 py-1 bg-cream-100 dark:bg-charcoal-900 border border-charcoal-900/10 dark:border-cream-100/10 text-xs font-mono rounded">JavaScript</span>
                     </div>
                 </div>
 
-                <div class="border border-charcoal-900/10 dark:border-cream-100/10 p-6 bg-cream-50 dark:bg-charcoal-800 rounded-xl flex flex-col justify-between">
-                    <div>
-                        <span class="text-xs font-mono text-gold-500 uppercase block mb-4">// AWS AI &amp; CLOUD INFRASTRUCTURE</span>
-                        <ul class="space-y-3 font-serif text-lg">
-                            <li class="flex justify-between items-center border-b border-charcoal-900/5 dark:border-cream-100/5 pb-1.5">
-                                <span>Amazon Bedrock &amp; Agents</span>
-                                <span class="text-[10px] font-mono opacity-60">Foundation Models</span>
-                            </li>
-                            <li class="flex justify-between items-center border-b border-charcoal-900/5 dark:border-cream-100/5 pb-1.5">
-                                <span>Amazon SageMaker</span>
-                                <span class="text-[10px] font-mono opacity-60">Model Training</span>
-                            </li>
-                            <li class="flex justify-between items-center border-b border-charcoal-900/5 dark:border-cream-100/5 pb-1.5">
-                                <span>AWS AI Cognitive Services</span>
-                                <span class="text-[10px] font-mono opacity-60">Rekognition / Q</span>
-                            </li>
-                            <li class="flex justify-between items-center">
-                                <span>Responsible AI &amp; Governance</span>
-                                <span class="text-[10px] font-mono opacity-60">IAM / Safety</span>
-                            </li>
-                        </ul>
+                <!-- Card 2: AI & Autonomous Agents -->
+                <div class="border border-charcoal-900/10 dark:border-cream-100/10 p-5 bg-cream-50 dark:bg-charcoal-800 rounded-xl space-y-3">
+                    <div class="flex items-center gap-2 border-b border-charcoal-900/10 dark:border-cream-100/10 pb-2">
+                        <svg class="w-4 h-4 text-gold-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="10" rx="2"></rect><circle cx="12" cy="5" r="2"></circle><path d="M12 7v4"></path></svg>
+                        <h5 class="font-mono text-xs font-bold uppercase tracking-wider">AI &amp; AUTONOMOUS AGENTS</h5>
+                    </div>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-2.5 py-1 bg-cream-100 dark:bg-charcoal-900 border border-charcoal-900/10 dark:border-cream-100/10 text-xs font-mono rounded">Groq Llama 3.3</span>
+                        <span class="px-2.5 py-1 bg-cream-100 dark:bg-charcoal-900 border border-charcoal-900/10 dark:border-cream-100/10 text-xs font-mono rounded">Autonomous Agents</span>
+                        <span class="px-2.5 py-1 bg-cream-100 dark:bg-charcoal-900 border border-charcoal-900/10 dark:border-cream-100/10 text-xs font-mono rounded">YOLOv8</span>
+                        <span class="px-2.5 py-1 bg-cream-100 dark:bg-charcoal-900 border border-charcoal-900/10 dark:border-cream-100/10 text-xs font-mono rounded">Whisper AI</span>
+                        <span class="px-2.5 py-1 bg-cream-100 dark:bg-charcoal-900 border border-charcoal-900/10 dark:border-cream-100/10 text-xs font-mono rounded">PyTorch</span>
+                        <span class="px-2.5 py-1 bg-cream-100 dark:bg-charcoal-900 border border-charcoal-900/10 dark:border-cream-100/10 text-xs font-mono rounded">Scikit-learn</span>
+                        <span class="px-2.5 py-1 bg-cream-100 dark:bg-charcoal-900 border border-charcoal-900/10 dark:border-cream-100/10 text-xs font-mono rounded">U-Net &amp; Grad-CAM</span>
+                        <span class="px-2.5 py-1 bg-cream-100 dark:bg-charcoal-900 border border-charcoal-900/10 dark:border-cream-100/10 text-xs font-mono rounded">OpenCV</span>
                     </div>
                 </div>
 
-                <div class="border border-charcoal-900/10 dark:border-cream-100/10 p-6 bg-cream-50 dark:bg-charcoal-800 rounded-xl flex flex-col justify-between">
-                    <div>
-                        <span class="text-xs font-mono text-gold-500 uppercase block mb-4">// CORE FULL-STACK &amp; LANGUAGES</span>
-                        <ul class="space-y-3 font-serif text-lg">
-                            <li class="flex justify-between items-center border-b border-charcoal-900/5 dark:border-cream-100/5 pb-1.5">
-                                <span>Python 3.x / PyTorch</span>
-                                <span class="text-[10px] font-mono opacity-60">ML &amp; Automation</span>
-                            </li>
-                            <li class="flex justify-between items-center border-b border-charcoal-900/5 dark:border-cream-100/5 pb-1.5">
-                                <span>React.js / React Native</span>
-                                <span class="text-[10px] font-mono opacity-60">Frontend / Mobile</span>
-                            </li>
-                            <li class="flex justify-between items-center border-b border-charcoal-900/5 dark:border-cream-100/5 pb-1.5">
-                                <span>FastAPI / Node.js / Java</span>
-                                <span class="text-[10px] font-mono opacity-60">Backend Services</span>
-                            </li>
-                            <li class="flex justify-between items-center">
-                                <span>PostgreSQL / MySQL / Docker</span>
-                                <span class="text-[10px] font-mono opacity-60">Database / Containers</span>
-                            </li>
-                        </ul>
+                <!-- Card 3: Web & Backend Engineering -->
+                <div class="border border-charcoal-900/10 dark:border-cream-100/10 p-5 bg-cream-50 dark:bg-charcoal-800 rounded-xl space-y-3">
+                    <div class="flex items-center gap-2 border-b border-charcoal-900/10 dark:border-cream-100/10 pb-2">
+                        <svg class="w-4 h-4 text-gold-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+                        <h5 class="font-mono text-xs font-bold uppercase tracking-wider">WEB &amp; BACKEND ENGINEERING</h5>
+                    </div>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-2.5 py-1 bg-cream-100 dark:bg-charcoal-900 border border-charcoal-900/10 dark:border-cream-100/10 text-xs font-mono rounded">React.js</span>
+                        <span class="px-2.5 py-1 bg-cream-100 dark:bg-charcoal-900 border border-charcoal-900/10 dark:border-cream-100/10 text-xs font-mono rounded">FastAPI</span>
+                        <span class="px-2.5 py-1 bg-cream-100 dark:bg-charcoal-900 border border-charcoal-900/10 dark:border-cream-100/10 text-xs font-mono rounded">Streamlit</span>
+                        <span class="px-2.5 py-1 bg-cream-100 dark:bg-charcoal-900 border border-charcoal-900/10 dark:border-cream-100/10 text-xs font-mono rounded">HTML5 / CSS3</span>
+                        <span class="px-2.5 py-1 bg-cream-100 dark:bg-charcoal-900 border border-charcoal-900/10 dark:border-cream-100/10 text-xs font-mono rounded">REST &amp; WebSockets</span>
+                    </div>
+                </div>
+
+                <!-- Card 4: Databases & DevOps -->
+                <div class="border border-charcoal-900/10 dark:border-cream-100/10 p-5 bg-cream-50 dark:bg-charcoal-800 rounded-xl space-y-3">
+                    <div class="flex items-center gap-2 border-b border-charcoal-900/10 dark:border-cream-100/10 pb-2">
+                        <svg class="w-4 h-4 text-gold-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path><path d="M21 19c0 1.66-4 3-9 3s-9-1.34-9-3"></path></svg>
+                        <h5 class="font-mono text-xs font-bold uppercase tracking-wider">DATABASES &amp; DEVOPS</h5>
+                    </div>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-2.5 py-1 bg-cream-100 dark:bg-charcoal-900 border border-charcoal-900/10 dark:border-cream-100/10 text-xs font-mono rounded">PostgreSQL</span>
+                        <span class="px-2.5 py-1 bg-cream-100 dark:bg-charcoal-900 border border-charcoal-900/10 dark:border-cream-100/10 text-xs font-mono rounded">MySQL</span>
+                        <span class="px-2.5 py-1 bg-cream-100 dark:bg-charcoal-900 border border-charcoal-900/10 dark:border-cream-100/10 text-xs font-mono rounded">Docker</span>
+                        <span class="px-2.5 py-1 bg-cream-100 dark:bg-charcoal-900 border border-charcoal-900/10 dark:border-cream-100/10 text-xs font-mono rounded">Firebase</span>
+                        <span class="px-2.5 py-1 bg-cream-100 dark:bg-charcoal-900 border border-charcoal-900/10 dark:border-cream-100/10 text-xs font-mono rounded">Git &amp; GitHub</span>
+                    </div>
+                </div>
+
+                <!-- Card 5: Cybersecurity & Defense -->
+                <div class="border border-charcoal-900/10 dark:border-cream-100/10 p-5 bg-cream-50 dark:bg-charcoal-800 rounded-xl space-y-3">
+                    <div class="flex items-center gap-2 border-b border-charcoal-900/10 dark:border-cream-100/10 pb-2">
+                        <svg class="w-4 h-4 text-gold-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                        <h5 class="font-mono text-xs font-bold uppercase tracking-wider">CYBERSECURITY &amp; DEFENSE</h5>
+                    </div>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-2.5 py-1 bg-cream-100 dark:bg-charcoal-900 border border-charcoal-900/10 dark:border-cream-100/10 text-xs font-mono rounded">VAPT</span>
+                        <span class="px-2.5 py-1 bg-cream-100 dark:bg-charcoal-900 border border-charcoal-900/10 dark:border-cream-100/10 text-xs font-mono rounded">Application Security</span>
+                        <span class="px-2.5 py-1 bg-cream-100 dark:bg-charcoal-900 border border-charcoal-900/10 dark:border-cream-100/10 text-xs font-mono rounded">Behavioral Malware Detection</span>
+                        <span class="px-2.5 py-1 bg-cream-100 dark:bg-charcoal-900 border border-charcoal-900/10 dark:border-cream-100/10 text-xs font-mono rounded">Audio Steganography</span>
+                    </div>
+                </div>
+
+                <!-- Card 6: APIs & Incident Delivery -->
+                <div class="border border-charcoal-900/10 dark:border-cream-100/10 p-5 bg-cream-50 dark:bg-charcoal-800 rounded-xl space-y-3">
+                    <div class="flex items-center gap-2 border-b border-charcoal-900/10 dark:border-cream-100/10 pb-2">
+                        <svg class="w-4 h-4 text-gold-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect><rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect><line x1="6" y1="6" x2="6.01" y2="6"></line><line x1="6" y1="18" x2="6.01" y2="18"></line></svg>
+                        <h5 class="font-mono text-xs font-bold uppercase tracking-wider">APIS &amp; INCIDENT DELIVERY</h5>
+                    </div>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-2.5 py-1 bg-cream-100 dark:bg-charcoal-900 border border-charcoal-900/10 dark:border-cream-100/10 text-xs font-mono rounded">Twilio API (SMS/Voice)</span>
+                        <span class="px-2.5 py-1 bg-cream-100 dark:bg-charcoal-900 border border-charcoal-900/10 dark:border-cream-100/10 text-xs font-mono rounded">Discord Webhooks</span>
+                        <span class="px-2.5 py-1 bg-cream-100 dark:bg-charcoal-900 border border-charcoal-900/10 dark:border-cream-100/10 text-xs font-mono rounded">JWT Auth</span>
+                        <span class="px-2.5 py-1 bg-cream-100 dark:bg-charcoal-900 border border-charcoal-900/10 dark:border-cream-100/10 text-xs font-mono rounded">Groq API</span>
                     </div>
                 </div>
 
             </div>
         </section>
 
+        <!-- VERIFICATIONS & CERTIFICATIONS -->
         <section class="py-12 border-b border-charcoal-900/10 dark:border-cream-100/10" id="certifications">
             <div class="flex justify-between items-end border-b border-charcoal-900/10 dark:border-cream-100/10 pb-2 mb-6">
                 <span class="text-xs font-mono tracking-wider text-gold-500 uppercase font-bold">V. REGISTRATION &amp; VERIFIED CREDENTIALS</span>
@@ -640,6 +675,7 @@
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                 
+                <!-- AWS AI Practitioner -->
                 <div class="p-4 border border-charcoal-900/10 dark:border-cream-100/10 bg-cream-50 dark:bg-charcoal-800 rounded-xl flex justify-between items-center hover:bg-gold-500/[0.02] transition-colors col-span-1 md:col-span-2">
                     <div>
                         <div class="flex items-center gap-2">
@@ -651,6 +687,7 @@
                     <span class="text-xs font-mono shrink-0 text-gold-500 bg-gold-500/5 dark:bg-gold-500/10 px-2 py-0.5 rounded ml-3">2026</span>
                 </div>
 
+                <!-- Palo Alto Networks -->
                 <div class="p-4 border border-charcoal-900/10 dark:border-cream-100/10 bg-cream-50 dark:bg-charcoal-800 rounded-xl flex justify-between items-center hover:bg-gold-500/[0.02] transition-colors">
                     <div>
                         <h5 class="font-serif text-lg leading-tight text-charcoal-900 dark:text-cream-100">Cybersecurity Foundation / Gateway Certification</h5>
@@ -659,6 +696,7 @@
                     <span class="text-xs font-mono shrink-0 text-gold-500 bg-gold-500/5 dark:bg-gold-500/10 px-2 py-0.5 rounded ml-3">JUL 2024</span>
                 </div>
 
+                <!-- Cisco IoT -->
                 <div class="p-4 border border-charcoal-900/10 dark:border-cream-100/10 bg-cream-50 dark:bg-charcoal-800 rounded-xl flex justify-between items-center hover:bg-gold-500/[0.02] transition-colors">
                     <div>
                         <h5 class="font-serif text-lg leading-tight text-charcoal-900 dark:text-cream-100">Introduction to IoT and Digital Transformation</h5>
@@ -667,6 +705,7 @@
                     <span class="text-xs font-mono shrink-0 text-gold-500 bg-gold-500/5 dark:bg-gold-500/10 px-2 py-0.5 rounded ml-3">APR 2026</span>
                 </div>
 
+                <!-- Cisco Python -->
                 <div class="p-4 border border-charcoal-900/10 dark:border-cream-100/10 bg-cream-50 dark:bg-charcoal-800 rounded-xl flex justify-between items-center hover:bg-gold-500/[0.02] transition-colors">
                     <div>
                         <h5 class="font-serif text-lg leading-tight text-charcoal-900 dark:text-cream-100">Python Essentials</h5>
@@ -675,6 +714,7 @@
                     <span class="text-xs font-mono shrink-0 text-gold-500 bg-gold-500/5 dark:bg-gold-500/10 px-2 py-0.5 rounded ml-3">NOV 2025</span>
                 </div>
 
+                <!-- Cisco CCNA Intro -->
                 <div class="p-4 border border-charcoal-900/10 dark:border-cream-100/10 bg-cream-50 dark:bg-charcoal-800 rounded-xl flex justify-between items-center hover:bg-gold-500/[0.02] transition-colors">
                     <div>
                         <h5 class="font-serif text-lg leading-tight text-charcoal-900 dark:text-cream-100">CCNA: Introduction to Networks</h5>
@@ -683,6 +723,7 @@
                     <span class="text-xs font-mono shrink-0 text-gold-500 bg-gold-500/5 dark:bg-gold-500/10 px-2 py-0.5 rounded ml-3">OCT 2025</span>
                 </div>
 
+                <!-- NPTEL Joy of Computing -->
                 <div class="p-4 border border-charcoal-900/10 dark:border-cream-100/10 bg-cream-50 dark:bg-charcoal-800 rounded-xl flex justify-between items-center hover:bg-gold-500/[0.02] transition-colors col-span-1 md:col-span-2">
                     <div>
                         <h5 class="font-serif text-lg leading-tight text-charcoal-900 dark:text-cream-100">The Joy of Computing using Python</h5>
