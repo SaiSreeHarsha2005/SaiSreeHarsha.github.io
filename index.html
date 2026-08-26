@@ -5,15 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Minnekanti Sai Sree Harsha - Portfolio</title>
     
-    <!-- Favicon using SVG Initials -->
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2280%22 font-family=%22DM Serif Display, serif%22 fill=%22%23C5A880%22>M</text></svg>">
 
-    <!-- Google Fonts: DM Serif Display (Editorial Title), DM Sans (Highly readable body), JetBrains Mono (Technical elements) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=DM+Serif+Display:ital@0;1&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
 
-    <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     
     <script>
@@ -51,7 +48,6 @@
     </script>
 
     <style type="text/css">
-        /* Custom scrollbar configurations matching the editorial theme */
         ::-webkit-scrollbar {
             width: 6px;
             height: 6px;
@@ -67,7 +63,6 @@
             border-radius: 3px;
         }
         
-        /* Interactive Card Focus & Hover Effects */
         .article-focus {
             transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
         }
@@ -82,15 +77,13 @@
             transform: translateY(-4px);
         }
 
-        /* Continuous news ticker line */
         @keyframes ticker {
             0% { transform: translateX(0); }
             100% { transform: translateX(-50%); }
         }
 
-        /* Polaroid picture-frame alignment */
         .contributor-photo {
-            transform: rotate(-3deg);
+            transform: rotate(-2.5deg);
             transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
         }
         .contributor-photo:hover {
@@ -124,10 +117,8 @@
 
 <body class="bg-cream-100 text-charcoal-900 dark:bg-charcoal-900 dark:text-cream-100 font-sans transition-colors duration-500 selection:bg-gold-500 selection:text-cream-50">
 
-    <!-- Focus Dimming Backdrop Layer -->
     <div id="focus-dimmer" class="fixed inset-0 bg-charcoal-900/60 backdrop-blur-[2px] opacity-0 pointer-events-none transition-opacity duration-500 z-30"></div>
 
-    <!-- Reading Progress Tracker -->
     <div class="fixed top-0 left-0 w-full h-[3px] bg-charcoal-900/5 dark:bg-cream-100/5 z-50 no-print">
         <div id="reading-progress" class="h-full bg-gold-500 transition-[width] duration-150 ease-out" style="width: 0%"></div>
     </div>
@@ -135,7 +126,6 @@
     <header class="border-b border-charcoal-900/10 dark:border-cream-100/10 px-4 md:px-12 py-6">
         <div class="max-w-7xl mx-auto">
             
-            <!-- Live Status & Document Actions Bar -->
             <div class="flex justify-between items-center text-xs font-mono tracking-widest uppercase mb-8 no-print">
                 <div class="flex items-center gap-4">
                     <span class="flex items-center gap-1.5">
@@ -146,7 +136,6 @@
                     <span class="hidden md:inline">EDITION 2026</span>
                 </div>
                 <div class="flex items-center gap-6">
-                    <!-- Direct Compose Gmail Integration -->
                     <a href="https://mail.google.com/mail/?view=cm&fs=1&to=qasaisreeharsha2005@gmail.com" target="_blank" rel="noopener noreferrer" class="hover:text-gold-500 transition-colors flex items-center gap-1.5 font-semibold">
                         <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
                         <span>Send Mail</span>
@@ -164,9 +153,8 @@
                 </div>
             </div>
 
-            <!-- Big Main Banner Newspaper Header -->
             <div class="text-center py-4 border-y-4 border-charcoal-900 dark:border-cream-100 relative">
-                <p class="text-xs font-mono tracking-[0.25em] uppercase mb-2">Portfolio Chronicles &bull; Computer Science & Engineering</p>
+                <p class="text-xs font-mono tracking-[0.25em] uppercase mb-2">Portfolio Chronicles &bull; AI Engineering & System Design</p>
                 <h1 class="font-serif text-5xl md:text-8xl lg:text-9xl tracking-tighter uppercase leading-none select-none">
                     The Dispatch
                 </h1>
@@ -175,7 +163,6 @@
                 </div>
             </div>
 
-            <!-- Header Columns of Student Statistics -->
             <div class="grid grid-cols-2 md:grid-cols-4 gap-4 py-3.5 text-xs font-mono text-center border-b border-charcoal-900/10 dark:border-cream-100/10 text-charcoal-900/70 dark:text-cream-100/70">
                 <div class="md:text-left">COGNITION: B.TECH CSE (2023 - 2027)</div>
                 <div class="hidden md:block">ACADEMICS: CGPA 8.74 / 10</div>
@@ -186,17 +173,15 @@
             <div class="overflow-hidden border-b border-charcoal-900/10 dark:border-cream-100/10 py-2 no-print">
                 <div class="flex items-center gap-4 whitespace-nowrap animate-[ticker_24s_linear_infinite] text-[11px] font-mono uppercase tracking-widest text-charcoal-900/60 dark:text-cream-100/60">
                     <span class="text-gold-500 font-bold">// WIRE TRANSMISSION:</span>
-                    <span>Full-Stack Engineer</span>
+                    <span>AI Engineering & Multi-Agent Architecture</span>
                     <span class="text-gold-500">&bull;</span>
-                    <span>Continuous Deployment Pipelines Specialist</span>
-                    <span class="text-gold-500">&bull;</span>
-                    <span>IoT Integration & Real-Time Telemetry</span>
+                    <span>RAG Pipelines & Vector Search Integration</span>
                     <span class="text-gold-500">&bull;</span>
                     <span>Preparing for AWS Certified AI Practitioner</span>
                     <span class="text-gold-500">&bull;</span>
                     <span>Global Rank 250 IEEE Xtreme 18.0</span>
                     <span class="text-gold-500">&bull;</span>
-                    <span>Experienced with GIS Integration at IMD</span>
+                    <span>Full-Stack Development & IoT Telemetry</span>
                 </div>
             </div>
         </div>
@@ -205,42 +190,50 @@
     <main class="max-w-7xl mx-auto px-4 md:px-12 py-8">
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 border-b border-charcoal-900/10 dark:border-cream-100/10 pb-12">
             
-            <!-- LEFT EDITORIAL PANEL: Biography, Primary Actions & Algorithmic Portals -->
             <div class="lg:col-span-5 lg:border-r lg:border-charcoal-900/10 dark:lg:border-cream-100/10 lg:pr-8 flex flex-col justify-between space-y-8">
                 <div class="space-y-6">
                     
-                    <!-- Photo Integration Profile Card -->
                     <div class="flex flex-col sm:flex-row items-start gap-6">
-                        <!-- Polaroid-style framework corrected to reference repo filename 'image.jpeg' -->
-                        <div class="contributor-photo shrink-0 bg-white dark:bg-cream-50 p-2.5 pb-3 shadow-xl border border-charcoal-900/10 rotate-[-2.5deg] mx-auto sm:mx-0">
+                        <div class="contributor-photo shrink-0 bg-white dark:bg-cream-50 p-2.5 pb-3 shadow-xl border border-charcoal-900/10 mx-auto sm:mx-0">
                             <img src="image.jpeg" alt="Minnekanti Sai Sree Harsha" class="w-32 h-32 md:w-36 md:h-36 object-cover grayscale-[15%] rounded-sm" onerror="this.onerror=null; this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'160\' height=\'160\'%3E%3Crect width=\'160\' height=\'160\' fill=\'%23232323\'/%3E%3Ctext x=\'50%25\' y=\'54%25\' font-family=\'DM Serif Display, serif\' font-size=\'58\' fill=\'%23C5A880\' text-anchor=\'middle\' dominant-baseline=\'middle\'%3EMS%3C/text%3E%3C/svg%3E';">
                         </div>
                         <div class="space-y-3 pt-1 text-center sm:text-left flex-1">
                             <span class="text-xs font-mono tracking-wider text-gold-500 uppercase block font-semibold">I. HEAD EDITOR DECK</span>
                             <h2 class="font-serif text-3xl md:text-4xl leading-[1.15] tracking-tight text-charcoal-900 dark:text-cream-50">
-                                Engineering reliable interfaces, automation engines, and embedded ecosystems.
+                                Engineering intelligent agentic systems, generative models, and scalable architectures.
                             </h2>
                         </div>
                     </div>
-                    
-                    <hr class="border-charcoal-900/10 dark:border-cream-100/10">
+
+                    <div class="p-4 bg-cream-50 dark:bg-charcoal-800 border border-charcoal-900/10 dark:border-cream-100/10 rounded-xl space-y-3 font-mono text-xs">
+                        <div class="flex justify-between items-center border-b border-charcoal-900/10 dark:border-cream-100/10 pb-2">
+                            <span class="text-gold-500 font-bold uppercase">// CURRENT FOCUS</span>
+                            <span class="text-charcoal-900 dark:text-cream-100 font-semibold">AI Agents • Full Stack</span>
+                        </div>
+                        <div class="flex justify-between items-center border-b border-charcoal-900/10 dark:border-cream-100/10 pb-2">
+                            <span class="text-gold-500 font-bold uppercase">// LEARNING &amp; EXPLORING</span>
+                            <span class="text-charcoal-900 dark:text-cream-100">Agentic Workflows • System Design • RAG</span>
+                        </div>
+                        <div class="flex justify-between items-center pt-0.5">
+                            <span class="text-gold-500 font-bold uppercase">// CAREER GOAL</span>
+                            <span class="text-emerald-600 dark:text-emerald-400 font-bold">Software Engineer / AI Engineer</span>
+                        </div>
+                    </div>
                     
                     <blockquote class="border-l-2 border-gold-500 pl-4 font-serif text-lg md:text-xl italic text-charcoal-900/80 dark:text-cream-100/80">
-                        "I bridge the gap between high-frequency backend services and responsive hardware layouts. My design is driven by low-latency integration and resilient architecture."
+                        "I design system architectures that combine multi-agent intelligence with deterministic full-stack performance and real-time execution."
                     </blockquote>
                     
                     <p class="text-sm leading-relaxed text-charcoal-900/70 dark:text-cream-100/70 text-justify">
-                        Currently completing my B.Tech in Computer Science and Engineering at Geethanjali College of Engineering and Technology (GPA: 8.74). My background includes production-level internships at the India Meteorological Department and Nucleonix Systems, specializing in spatial automation pipelines, React Native telemetry layouts, and security matrices.
+                        Completing my B.Tech in Computer Science and Engineering at Geethanjali College of Engineering and Technology (GPA: 8.74). Experienced in engineering autonomous AI workflows, spatial automation pipelines, and IoT hardware integration during tenures at IMD and Nucleonix Systems.
                     </p>
 
-                    <!-- DIRECT CONVERSATION & RESUME DOWNLOAD BLOCK -->
                     <div class="pt-2 flex flex-col sm:flex-row gap-4">
                         <a href="https://mail.google.com/mail/?view=cm&fs=1&to=qasaisreeharsha2005@gmail.com" target="_blank" rel="noopener noreferrer" class="flex-1 flex items-center justify-center gap-2 border-2 border-charcoal-900 dark:border-cream-100 py-3 rounded-xl font-mono text-xs uppercase tracking-wider font-bold hover:bg-gold-500 hover:text-cream-50 hover:border-gold-500 transition-all shadow-sm">
                             <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 22,6"></polyline></svg>
                             <span>Contact Me</span>
                         </a>
                         
-                        <!-- CORRECTED RESUME FILE LINK (M.SaiSreeHarsha_Resume.pdf) -->
                         <a href="M.SaiSreeHarsha_Resume.pdf" target="_blank" rel="noopener noreferrer" class="flex-1 flex items-center justify-center gap-2 border border-charcoal-900/20 dark:border-cream-100/20 bg-cream-50 dark:bg-charcoal-800 py-3 rounded-xl font-mono text-xs uppercase tracking-wider font-bold hover:border-gold-500 hover:text-gold-500 transition-all">
                             <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line></svg>
                             <span>Download Resume</span>
@@ -251,22 +244,18 @@
                 <div class="pt-6 border-t border-dashed border-charcoal-900/20 dark:border-cream-100/20">
                     <span class="text-[10px] font-mono uppercase tracking-[0.2em] block mb-4 text-gold-500 font-bold">// DSA ALGORITHMIC REGISTRIES</span>
                     <div class="grid grid-cols-2 gap-3">
-                        <!-- LeetCode -->
                         <a href="https://leetcode.com/u/saisreeharsha_2809/" target="_blank" rel="noopener noreferrer" class="border border-charcoal-900/10 dark:border-cream-100/10 bg-cream-50 dark:bg-charcoal-800/50 p-3 rounded-lg hover:border-gold-500 transition-all flex flex-col justify-between">
                             <span class="text-[9px] font-mono text-charcoal-900/50 dark:text-cream-100/50 uppercase">LeetCode</span>
                             <span class="font-mono text-xs font-semibold mt-1 break-all text-charcoal-900 dark:text-cream-50">saisreeharsha_2809</span>
                         </a>
-                        <!-- HackerRank -->
                         <a href="https://www.hackerrank.com/profile/qasaisreeharsha1" target="_blank" rel="noopener noreferrer" class="border border-charcoal-900/10 dark:border-cream-100/10 bg-cream-50 dark:bg-charcoal-800/50 p-3 rounded-lg hover:border-gold-500 transition-all flex flex-col justify-between">
                             <span class="text-[9px] font-mono text-charcoal-900/50 dark:text-cream-100/50 uppercase">HackerRank</span>
                             <span class="font-mono text-xs font-semibold mt-1 break-all text-charcoal-900 dark:text-cream-50">qasaisreeharsha1</span>
                         </a>
-                        <!-- CodeChef -->
                         <a href="https://www.codechef.com/users/saisreeharsha5" target="_blank" rel="noopener noreferrer" class="border border-charcoal-900/10 dark:border-cream-100/10 bg-cream-50 dark:bg-charcoal-800/50 p-3 rounded-lg hover:border-gold-500 transition-all flex flex-col justify-between">
                             <span class="text-[9px] font-mono text-charcoal-900/50 dark:text-cream-100/50 uppercase">CodeChef</span>
                             <span class="font-mono text-xs font-semibold mt-1 break-all text-charcoal-900 dark:text-cream-50">saisreeharsha5</span>
                         </a>
-                        <!-- Codeforces -->
                         <a href="https://codeforces.com/profile/saisreeharsha5" target="_blank" rel="noopener noreferrer" class="border border-charcoal-900/10 dark:border-cream-100/10 bg-cream-50 dark:bg-charcoal-800/50 p-3 rounded-lg hover:border-gold-500 transition-all flex flex-col justify-between">
                             <span class="text-[9px] font-mono text-charcoal-900/50 dark:text-cream-100/50 uppercase">Codeforces</span>
                             <span class="font-mono text-xs font-semibold mt-1 break-all text-charcoal-900 dark:text-cream-50">saisreeharsha5</span>
@@ -274,12 +263,11 @@
                     </div>
                 </div>
 
-                <!-- Navigation Hub Map -->
                 <div class="pt-6 border-t border-dashed border-charcoal-900/20 dark:border-cream-100/20 no-print">
                     <span class="text-[10px] font-mono uppercase tracking-[0.2em] block mb-3 text-charcoal-900/40 dark:text-cream-100/40">THE CHRONICLE MAP</span>
                     <nav class="space-y-1.5 font-serif text-lg">
                         <a href="#projects" class="flex justify-between items-center py-1 border-b border-transparent hover:border-gold-500 transition-all">
-                            <span>01 / Systems & Designs</span>
+                            <span>01 / Systems &amp; AI Architectures</span>
                             <span class="text-xs font-mono text-gold-500">&rarr;</span>
                         </a>
                         <a href="#experience" class="flex justify-between items-center py-1 border-b border-transparent hover:border-gold-500 transition-all">
@@ -305,20 +293,18 @@
                         <span class="text-[10px] font-mono text-charcoal-900/40 dark:text-cream-100/40">[INTERACTIVE CARDS]</span>
                     </div>
 
-                    <!-- Stack of Project Cases -->
                     <div class="space-y-8">
                         
-                        <!-- Case 1: AI Defense System -->
                         <article class="article-focus bg-cream-50 dark:bg-charcoal-800 border border-charcoal-900/10 dark:border-cream-100/10 p-6 flex flex-col justify-between cursor-pointer rounded-xl" onclick="toggleFocus(this)">
                             <div>
                                 <div class="flex justify-between items-start mb-4 border-b border-charcoal-900/10 dark:border-cream-100/10 pb-3">
                                     <div>
                                         <span class="text-[10px] font-mono text-gold-500 uppercase block font-bold">[ENGINEERING DESIGN 01]</span>
                                         <h3 class="font-serif text-2xl lg:text-3xl text-charcoal-900 dark:text-cream-100">
-                                            AI-Powered Defense Communication & Incident Response System
+                                            AI-Powered Defense Communication &amp; Incident Response System
                                         </h3>
                                         <p class="text-[11px] font-mono text-charcoal-900/50 dark:text-cream-100/50 uppercase mt-1">
-                                            Real-time Surveillance, Incident Detection, and Voice Analytics
+                                            Real-time Surveillance, Incident Detection, and Agentic Voice Analytics
                                         </p>
                                     </div>
                                     <span class="text-xs font-mono shrink-0 text-gold-500 bg-gold-500/10 px-2.5 py-1 rounded">2026</span>
@@ -359,7 +345,7 @@
                                                     <span class="font-bold">[FastAPI Backend]</span>
                                                 </div>
                                                 <div class="flex justify-between items-center bg-charcoal-900/5 dark:bg-cream-100/5 p-1 rounded">
-                                                    <span class="text-red-500 font-bold">[Whisper Transcription]</span>
+                                                    <span class="text-red-500 font-bold">[Whisper STT]</span>
                                                     <span>&rarr;</span>
                                                     <span class="text-emerald-500 font-bold">[Llama Structuring]</span>
                                                 </div>
@@ -379,7 +365,6 @@
                             </div>
                         </article>
 
-                        <!-- Case 2: OncoVision AI -->
                         <article class="article-focus bg-cream-50 dark:bg-charcoal-800 border border-charcoal-900/10 dark:border-cream-100/10 p-6 flex flex-col justify-between cursor-pointer rounded-xl" onclick="toggleFocus(this)">
                             <div>
                                 <div class="flex justify-between items-start mb-4 border-b border-charcoal-900/10 dark:border-cream-100/10 pb-3">
@@ -389,7 +374,7 @@
                                             OncoVision AI Diagnostics System
                                         </h3>
                                         <p class="text-[11px] font-mono text-charcoal-900/50 dark:text-cream-100/50 uppercase mt-1">
-                                            Deep Learning Histopathology Processing & Classification Pipeline
+                                            Deep Learning Histopathology Processing &amp; Classification Pipeline
                                         </p>
                                     </div>
                                     <span class="text-xs font-mono shrink-0 text-gold-500 bg-gold-500/10 px-2.5 py-1 rounded">2026</span>
@@ -425,7 +410,7 @@
                                             </h4>
                                             <div class="mt-1.5 p-3 bg-cream-100 dark:bg-charcoal-900 border border-charcoal-900/10 dark:border-cream-100/10 rounded-lg space-y-1 font-mono text-[10px]">
                                                 <div class="bg-gold-500/10 p-1.5 rounded font-bold text-center">
-                                                    Raw Histopathology Cell Frame &rarr; PyTorch Backbone &rarr; Grad-CAM Saliency Focus Map
+                                                    Biopsy Cell Frame &rarr; PyTorch CNN &rarr; Grad-CAM Focus Map
                                                 </div>
                                             </div>
                                         </div>
@@ -443,7 +428,6 @@
                             </div>
                         </article>
 
-                        <!-- Case 3: JobMatch Portal -->
                         <article class="article-focus bg-cream-50 dark:bg-charcoal-800 border border-charcoal-900/10 dark:border-cream-100/10 p-6 flex flex-col justify-between cursor-pointer rounded-xl" onclick="toggleFocus(this)">
                             <div>
                                 <div class="flex justify-between items-start mb-4 border-b border-charcoal-900/10 dark:border-cream-100/10 pb-3">
@@ -467,7 +451,7 @@
                                                 Problem Space
                                             </h4>
                                             <p class="text-charcoal-900/70 dark:text-cream-100/70 leading-relaxed text-justify mt-1">
-                                                Job search systems require safe, isolated operational portals for job seekers and hiring entities simultaneously without complex system latency.
+                                                Job search systems require safe, isolated operational portals for job seekers and hiring entities simultaneously without dynamic route latency.
                                             </p>
                                         </div>
                                         <div>
@@ -476,7 +460,7 @@
                                                 Execution
                                             </h4>
                                             <p class="text-charcoal-900/70 dark:text-cream-100/70 leading-relaxed text-justify mt-1">
-                                                Assembled relational MySQL tables paired with PHP. Handled dynamic routing states to validate credential sessions securely.
+                                                Assembled relational MySQL tables paired with PHP backend logic. Handled dynamic routing states to validate credential sessions securely.
                                             </p>
                                         </div>
                                     </div>
@@ -485,15 +469,15 @@
                                         <div>
                                             <h4 class="font-mono font-bold text-charcoal-900/40 dark:text-cream-100/40 flex items-center gap-1.5 uppercase">
                                                 <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="18" cy="5" r="3"></circle><circle cx="6" cy="12" r="3"></circle><circle cx="18" cy="19" r="3"></circle><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line></svg>
-                                                Dynamic Routing Schema
+                                                Routing Schema
                                             </h4>
                                             <div class="mt-1.5 p-3 bg-cream-100 dark:bg-charcoal-900 border border-charcoal-900/10 dark:border-cream-100/10 rounded-lg space-y-1 font-mono text-[10px]">
                                                 <div class="flex justify-between items-center bg-gold-500/10 p-1 rounded">
-                                                    <span>[Public Traffic]</span>
+                                                    <span>[Public Request]</span>
                                                     <span>&rarr;</span>
                                                     <span>[PHP Validator]</span>
                                                     <span>&rarr;</span>
-                                                    <span class="text-emerald-500 font-bold">[Dashboards]</span>
+                                                    <span class="text-emerald-500 font-bold">[Dashboard]</span>
                                                 </div>
                                             </div>
                                         </div>
@@ -526,7 +510,6 @@
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                 
-                <!-- Tenures 01: IMD -->
                 <div class="space-y-3">
                     <span class="text-xs font-mono text-gold-500 block font-semibold">01 / JAN 2026 – JUNE 2026</span>
                     <h4 class="font-serif text-2xl tracking-tight leading-tight">India Meteorological Department</h4>
@@ -536,7 +519,6 @@
                     </p>
                 </div>
 
-                <!-- Tenures 02: Nucleonix Systems -->
                 <div class="space-y-3">
                     <span class="text-xs font-mono text-gold-500 block font-semibold">02 / FEB 2026 – JUNE 2026</span>
                     <h4 class="font-serif text-2xl tracking-tight leading-tight">Nucleonix Systems Pvt. Ltd.</h4>
@@ -546,7 +528,6 @@
                     </p>
                 </div>
 
-                <!-- Tenures 03: Supraja Technologies Cybersecurity Internship (RESTORED) -->
                 <div class="space-y-3">
                     <span class="text-xs font-mono text-gold-500 block font-semibold">03 / JUNE 2024 – JULY 2024</span>
                     <h4 class="font-serif text-2xl tracking-tight leading-tight">Supraja Technologies</h4>
@@ -556,7 +537,6 @@
                     </p>
                 </div>
 
-                <!-- Tenures 04: RavNova -->
                 <div class="space-y-3">
                     <span class="text-xs font-mono text-gold-500 block font-semibold">04 / APR 2026 – MAY 2026</span>
                     <h4 class="font-serif text-2xl tracking-tight leading-tight">RavNova</h4>
@@ -577,61 +557,76 @@
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 
-                <!-- Stack Col 1 -->
-                <div class="border border-charcoal-900/10 dark:border-cream-100/10 p-6 bg-cream-50 dark:bg-charcoal-800 rounded-xl">
-                    <span class="text-xs font-mono text-gold-500 uppercase block mb-4">// CODING COMPILERS</span>
-                    <ul class="space-y-2.5 font-serif text-xl">
-                        <li class="flex justify-between items-center">
-                            <span>Java Standard Edition</span>
-                            <span class="text-[10px] font-mono opacity-55">Core OOP</span>
-                        </li>
-                        <li class="flex justify-between items-center">
-                            <span>Python 3.x</span>
-                            <span class="text-[10px] font-mono opacity-55">PyTorch / Scrapy</span>
-                        </li>
-                        <li class="flex justify-between items-center">
-                            <span>SQL Syntax</span>
-                            <span class="text-[10px] font-mono opacity-55">Relational queries</span>
-                        </li>
-                    </ul>
+                <div class="border border-charcoal-900/10 dark:border-cream-100/10 p-6 bg-cream-50 dark:bg-charcoal-800 rounded-xl flex flex-col justify-between">
+                    <div>
+                        <span class="text-xs font-mono text-gold-500 uppercase block mb-4">// AI, LLM &amp; AGENTIC SYSTEMS</span>
+                        <ul class="space-y-3 font-serif text-lg">
+                            <li class="flex justify-between items-center border-b border-charcoal-900/5 dark:border-cream-100/5 pb-1.5">
+                                <span>Agentic AI &amp; Tool-Calling</span>
+                                <span class="text-[10px] font-mono opacity-60">ReAct / Multi-Agent</span>
+                            </li>
+                            <li class="flex justify-between items-center border-b border-charcoal-900/5 dark:border-cream-100/5 pb-1.5">
+                                <span>RAG &amp; Vector Databases</span>
+                                <span class="text-[10px] font-mono opacity-60">Embeddings / Chunking</span>
+                            </li>
+                            <li class="flex justify-between items-center border-b border-charcoal-900/5 dark:border-cream-100/5 pb-1.5">
+                                <span>Deep Learning Networks</span>
+                                <span class="text-[10px] font-mono opacity-60">CNN / Transformers</span>
+                            </li>
+                            <li class="flex justify-between items-center">
+                                <span>Prompt Engineering</span>
+                                <span class="text-[10px] font-mono opacity-60">Few-Shot / Guardrails</span>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
 
-                <!-- Stack Col 2 -->
-                <div class="border border-charcoal-900/10 dark:border-cream-100/10 p-6 bg-cream-50 dark:bg-charcoal-800 rounded-xl">
-                    <span class="text-xs font-mono text-gold-500 uppercase block mb-4">// PIPELINES & WEB STACK</span>
-                    <ul class="space-y-2.5 font-serif text-xl">
-                        <li class="flex justify-between items-center">
-                            <span>React Native / Expo</span>
-                            <span class="text-[10px] font-mono opacity-55">BLE Telemetry</span>
-                        </li>
-                        <li class="flex justify-between items-center">
-                            <span>FastAPI / Node.js</span>
-                            <span class="text-[10px] font-mono opacity-55">REST APIs</span>
-                        </li>
-                        <li class="flex justify-between items-center">
-                            <span>OpenCV &amp; YOLOv8</span>
-                            <span class="text-[10px] font-mono opacity-55">Computer Vision</span>
-                        </li>
-                    </ul>
+                <div class="border border-charcoal-900/10 dark:border-cream-100/10 p-6 bg-cream-50 dark:bg-charcoal-800 rounded-xl flex flex-col justify-between">
+                    <div>
+                        <span class="text-xs font-mono text-gold-500 uppercase block mb-4">// AWS AI &amp; CLOUD INFRASTRUCTURE</span>
+                        <ul class="space-y-3 font-serif text-lg">
+                            <li class="flex justify-between items-center border-b border-charcoal-900/5 dark:border-cream-100/5 pb-1.5">
+                                <span>Amazon Bedrock &amp; Agents</span>
+                                <span class="text-[10px] font-mono opacity-60">Foundation Models</span>
+                            </li>
+                            <li class="flex justify-between items-center border-b border-charcoal-900/5 dark:border-cream-100/5 pb-1.5">
+                                <span>Amazon SageMaker</span>
+                                <span class="text-[10px] font-mono opacity-60">Model Training</span>
+                            </li>
+                            <li class="flex justify-between items-center border-b border-charcoal-900/5 dark:border-cream-100/5 pb-1.5">
+                                <span>AWS AI Cognitive Services</span>
+                                <span class="text-[10px] font-mono opacity-60">Rekognition / Q</span>
+                            </li>
+                            <li class="flex justify-between items-center">
+                                <span>Responsible AI &amp; Governance</span>
+                                <span class="text-[10px] font-mono opacity-60">IAM / Safety</span>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
 
-                <!-- Stack Col 3 -->
-                <div class="border border-charcoal-900/10 dark:border-cream-100/10 p-6 bg-cream-50 dark:bg-charcoal-800 rounded-xl">
-                    <span class="text-xs font-mono text-gold-500 uppercase block mb-4">// ENVIRONMENTS</span>
-                    <ul class="space-y-2.5 font-serif text-xl">
-                        <li class="flex justify-between items-center">
-                            <span>PostgreSQL / MySQL</span>
-                            <span class="text-[10px] font-mono opacity-55">Database</span>
-                        </li>
-                        <li class="flex justify-between items-center">
-                            <span>Docker Containers</span>
-                            <span class="text-[10px] font-mono opacity-55">Deployment</span>
-                        </li>
-                        <li class="flex justify-between items-center">
-                            <span>Git &amp; Task Schedulers</span>
-                            <span class="text-[10px] font-mono opacity-55">Workflows</span>
-                        </li>
-                    </ul>
+                <div class="border border-charcoal-900/10 dark:border-cream-100/10 p-6 bg-cream-50 dark:bg-charcoal-800 rounded-xl flex flex-col justify-between">
+                    <div>
+                        <span class="text-xs font-mono text-gold-500 uppercase block mb-4">// CORE FULL-STACK &amp; LANGUAGES</span>
+                        <ul class="space-y-3 font-serif text-lg">
+                            <li class="flex justify-between items-center border-b border-charcoal-900/5 dark:border-cream-100/5 pb-1.5">
+                                <span>Python 3.x / PyTorch</span>
+                                <span class="text-[10px] font-mono opacity-60">ML &amp; Automation</span>
+                            </li>
+                            <li class="flex justify-between items-center border-b border-charcoal-900/5 dark:border-cream-100/5 pb-1.5">
+                                <span>React.js / React Native</span>
+                                <span class="text-[10px] font-mono opacity-60">Frontend / Mobile</span>
+                            </li>
+                            <li class="flex justify-between items-center border-b border-charcoal-900/5 dark:border-cream-100/5 pb-1.5">
+                                <span>FastAPI / Node.js / Java</span>
+                                <span class="text-[10px] font-mono opacity-60">Backend Services</span>
+                            </li>
+                            <li class="flex justify-between items-center">
+                                <span>PostgreSQL / MySQL / Docker</span>
+                                <span class="text-[10px] font-mono opacity-60">Database / Containers</span>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
 
             </div>
@@ -645,7 +640,17 @@
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                 
-                <!-- Palo Alto Networks (RESTORED) -->
+                <div class="p-4 border border-charcoal-900/10 dark:border-cream-100/10 bg-cream-50 dark:bg-charcoal-800 rounded-xl flex justify-between items-center hover:bg-gold-500/[0.02] transition-colors col-span-1 md:col-span-2">
+                    <div>
+                        <div class="flex items-center gap-2">
+                            <h5 class="font-serif text-lg leading-tight text-charcoal-900 dark:text-cream-100">AWS Certified AI Practitioner Preparation</h5>
+                            <span class="text-[9px] font-mono text-emerald-600 dark:text-emerald-400 bg-emerald-500/10 px-2 py-0.5 rounded font-bold">IN PROGRESS</span>
+                        </div>
+                        <p class="text-xs font-mono text-charcoal-900/60 dark:text-cream-100/60 mt-1">AWS Cloud &bull; Amazon Bedrock, SageMaker, Multi-Agent &amp; Guardrails Frameworks</p>
+                    </div>
+                    <span class="text-xs font-mono shrink-0 text-gold-500 bg-gold-500/5 dark:bg-gold-500/10 px-2 py-0.5 rounded ml-3">2026</span>
+                </div>
+
                 <div class="p-4 border border-charcoal-900/10 dark:border-cream-100/10 bg-cream-50 dark:bg-charcoal-800 rounded-xl flex justify-between items-center hover:bg-gold-500/[0.02] transition-colors">
                     <div>
                         <h5 class="font-serif text-lg leading-tight text-charcoal-900 dark:text-cream-100">Cybersecurity Foundation / Gateway Certification</h5>
@@ -654,7 +659,6 @@
                     <span class="text-xs font-mono shrink-0 text-gold-500 bg-gold-500/5 dark:bg-gold-500/10 px-2 py-0.5 rounded ml-3">JUL 2024</span>
                 </div>
 
-                <!-- Cisco IoT -->
                 <div class="p-4 border border-charcoal-900/10 dark:border-cream-100/10 bg-cream-50 dark:bg-charcoal-800 rounded-xl flex justify-between items-center hover:bg-gold-500/[0.02] transition-colors">
                     <div>
                         <h5 class="font-serif text-lg leading-tight text-charcoal-900 dark:text-cream-100">Introduction to IoT and Digital Transformation</h5>
@@ -663,7 +667,6 @@
                     <span class="text-xs font-mono shrink-0 text-gold-500 bg-gold-500/5 dark:bg-gold-500/10 px-2 py-0.5 rounded ml-3">APR 2026</span>
                 </div>
 
-                <!-- Cisco Python -->
                 <div class="p-4 border border-charcoal-900/10 dark:border-cream-100/10 bg-cream-50 dark:bg-charcoal-800 rounded-xl flex justify-between items-center hover:bg-gold-500/[0.02] transition-colors">
                     <div>
                         <h5 class="font-serif text-lg leading-tight text-charcoal-900 dark:text-cream-100">Python Essentials</h5>
@@ -672,7 +675,6 @@
                     <span class="text-xs font-mono shrink-0 text-gold-500 bg-gold-500/5 dark:bg-gold-500/10 px-2 py-0.5 rounded ml-3">NOV 2025</span>
                 </div>
 
-                <!-- Cisco CCNA Intro -->
                 <div class="p-4 border border-charcoal-900/10 dark:border-cream-100/10 bg-cream-50 dark:bg-charcoal-800 rounded-xl flex justify-between items-center hover:bg-gold-500/[0.02] transition-colors">
                     <div>
                         <h5 class="font-serif text-lg leading-tight text-charcoal-900 dark:text-cream-100">CCNA: Introduction to Networks</h5>
@@ -681,7 +683,6 @@
                     <span class="text-xs font-mono shrink-0 text-gold-500 bg-gold-500/5 dark:bg-gold-500/10 px-2 py-0.5 rounded ml-3">OCT 2025</span>
                 </div>
 
-                <!-- NPTEL Joy of Computing -->
                 <div class="p-4 border border-charcoal-900/10 dark:border-cream-100/10 bg-cream-50 dark:bg-charcoal-800 rounded-xl flex justify-between items-center hover:bg-gold-500/[0.02] transition-colors col-span-1 md:col-span-2">
                     <div>
                         <h5 class="font-serif text-lg leading-tight text-charcoal-900 dark:text-cream-100">The Joy of Computing using Python</h5>
@@ -779,7 +780,6 @@
     </footer>
 
     <script>
-        // Theme switcher configurations
         const themeToggleBtn = document.getElementById('theme-toggle');
         const iconMoon = document.getElementById('icon-moon');
         const iconSun = document.getElementById('icon-sun');
@@ -802,7 +802,6 @@
             setThemeIcons(isDark);
         });
 
-        // Track reading progress
         function updateReadingProgress() {
             const scrollTop = window.scrollY;
             const docHeight = document.documentElement.scrollHeight - window.innerHeight;
@@ -812,7 +811,6 @@
         window.addEventListener('scroll', updateReadingProgress);
         updateReadingProgress();
 
-        // Localized Clock (Kolkata Standard Time Zone)
         function updateLiveClock() {
             const options = {
                 timeZone: 'Asia/Kolkata',
@@ -827,7 +825,6 @@
         setInterval(updateLiveClock, 1000);
         updateLiveClock();
 
-        // Interactive click highlights
         const dimmer = document.getElementById('focus-dimmer');
         let currentFocused = null;
 
